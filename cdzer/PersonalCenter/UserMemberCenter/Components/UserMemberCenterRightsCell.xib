@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserMemberCenterRightsCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="white_logo_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="7M9-H8-FRq">
+                        <rect key="frame" x="18" y="9" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Bve-nS-0Pe"/>
+                            <constraint firstAttribute="width" constant="34" id="CAE-g0-aUU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免费获得行车记录仪" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nl-4f-C4L">
+                        <rect key="frame" x="3" y="46" width="64" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7M9-H8-FRq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dbu-Ab-WsZ"/>
+                <constraint firstItem="3Nl-4f-C4L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="GuQ-RV-xuI"/>
+                <constraint firstItem="7M9-H8-FRq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="QY7-Nn-bAe"/>
+                <constraint firstAttribute="trailing" secondItem="3Nl-4f-C4L" secondAttribute="trailing" constant="3" id="U9h-s9-HPa"/>
+                <constraint firstAttribute="bottom" secondItem="3Nl-4f-C4L" secondAttribute="bottom" constant="3" id="f6K-1W-7m9"/>
+                <constraint firstItem="3Nl-4f-C4L" firstAttribute="top" secondItem="7M9-H8-FRq" secondAttribute="bottom" constant="3" id="tqY-ze-Jsh"/>
+            </constraints>
+            <size key="customSize" width="49" height="50"/>
+            <connections>
+                <outlet property="iconIV" destination="7M9-H8-FRq" id="Ndh-ud-h9N"/>
+                <outlet property="titleLabel" destination="3Nl-4f-C4L" id="G4D-wi-LNy"/>
+            </connections>
+            <point key="canvasLocation" x="279.5" y="282"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="white_logo_small.png" width="30" height="30"/>
+    </resources>
+</document>

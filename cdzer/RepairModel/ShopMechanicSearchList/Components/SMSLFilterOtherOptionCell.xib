@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ory-Aw-hai" customClass="SMSLFilterOtherOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-0U-By6">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC9-mc-1tI">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wC9-mc-1tI" firstAttribute="top" secondItem="hS8-0U-By6" secondAttribute="top" id="9PB-Ch-PSx"/>
+                            <constraint firstItem="wC9-mc-1tI" firstAttribute="leading" secondItem="hS8-0U-By6" secondAttribute="leading" id="Pxl-FG-3UF"/>
+                            <constraint firstAttribute="trailing" secondItem="wC9-mc-1tI" secondAttribute="trailing" id="hkr-AC-Ifx"/>
+                            <constraint firstAttribute="bottom" secondItem="wC9-mc-1tI" secondAttribute="bottom" id="tUh-wv-EvW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="hS8-0U-By6" firstAttribute="leading" secondItem="ory-Aw-hai" secondAttribute="leading" id="TLe-ZG-sny"/>
+                <constraint firstAttribute="bottom" secondItem="hS8-0U-By6" secondAttribute="bottom" id="bAu-Ck-shs"/>
+                <constraint firstItem="hS8-0U-By6" firstAttribute="top" secondItem="ory-Aw-hai" secondAttribute="top" id="nRS-xJ-Cx6"/>
+                <constraint firstAttribute="trailing" secondItem="hS8-0U-By6" secondAttribute="trailing" id="rVD-Yi-KsQ"/>
+            </constraints>
+            <size key="customSize" width="189" height="50"/>
+            <connections>
+                <outlet property="textLabel" destination="wC9-mc-1tI" id="Wie-z3-wqE"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="240"/>
+        </collectionViewCell>
+    </objects>
+</document>

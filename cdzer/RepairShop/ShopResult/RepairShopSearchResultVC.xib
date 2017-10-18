@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepairShopSearchResultVC">
+            <connections>
+                <outlet property="mapContainerView" destination="tTH-eR-SXl" id="z9K-RY-D73"/>
+                <outlet property="tableView" destination="EWF-fH-kTt" id="R5w-21-9e1"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hxC-3C-4Of"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijz-9J-NPO">
+                    <rect key="frame" x="0.0" y="42" width="414" height="694"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTH-eR-SXl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EWF-fH-kTt">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="694"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="TlE-wp-CE3"/>
+                                <outlet property="delegate" destination="-1" id="Zvo-pq-xYv"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tTH-eR-SXl" firstAttribute="top" secondItem="ijz-9J-NPO" secondAttribute="top" id="0du-uc-Gsn"/>
+                        <constraint firstItem="tTH-eR-SXl" firstAttribute="leading" secondItem="ijz-9J-NPO" secondAttribute="leading" id="9ET-Ij-qhp"/>
+                        <constraint firstAttribute="bottom" secondItem="EWF-fH-kTt" secondAttribute="bottom" id="Rzf-z4-4vn"/>
+                        <constraint firstAttribute="bottom" secondItem="tTH-eR-SXl" secondAttribute="bottom" id="TRh-MO-dOo"/>
+                        <constraint firstItem="EWF-fH-kTt" firstAttribute="top" secondItem="ijz-9J-NPO" secondAttribute="top" id="Wq7-8p-a9G"/>
+                        <constraint firstAttribute="trailing" secondItem="EWF-fH-kTt" secondAttribute="trailing" id="bEM-7h-o2D"/>
+                        <constraint firstItem="EWF-fH-kTt" firstAttribute="leading" secondItem="ijz-9J-NPO" secondAttribute="leading" id="g9f-d6-vfZ"/>
+                        <constraint firstAttribute="trailing" secondItem="tTH-eR-SXl" secondAttribute="trailing" id="hEE-26-pLg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ijz-9J-NPO" secondAttribute="trailing" id="5wz-6H-3GG"/>
+                <constraint firstAttribute="bottom" secondItem="ijz-9J-NPO" secondAttribute="bottom" id="Nb0-dc-369"/>
+                <constraint firstItem="ijz-9J-NPO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nbu-aH-Tnl"/>
+                <constraint firstItem="ijz-9J-NPO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="e3B-en-bIq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="273" y="236"/>
+        </view>
+    </objects>
+</document>

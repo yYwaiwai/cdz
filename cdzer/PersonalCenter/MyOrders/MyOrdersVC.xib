@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrdersVC">
+            <connections>
+                <outlet property="allButton" destination="YFd-my-ofd" id="HMC-zv-Xj6"/>
+                <outlet property="buttonBgView" destination="FYG-9A-v5Y" id="JTa-m2-5cz"/>
+                <outlet property="pendingPaymentButton" destination="D2o-qH-xgL" id="m5a-bc-1ms"/>
+                <outlet property="tableView" destination="R2c-lc-xg9" id="TCL-Ly-q5k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="waitingForEvaluateButton" destination="Fsl-2c-qbH" id="U7w-fG-a9Z"/>
+                <outlet property="waitingForInstallationButton" destination="sxi-lY-ga4" id="Yd6-pQ-efC"/>
+                <outlet property="waitingForReceivingButton" destination="chj-0d-aZ8" id="eqU-RB-ry7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYG-9A-v5Y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFd-my-ofd">
+                            <rect key="frame" x="0.0" y="0.0" width="74" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="全部">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2o-qH-xgL">
+                            <rect key="frame" x="75" y="0.0" width="74.5" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="待付款">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chj-0d-aZ8">
+                            <rect key="frame" x="150.5" y="0.0" width="74" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="待收货">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxi-lY-ga4">
+                            <rect key="frame" x="225.5" y="0.0" width="74.5" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="待安装">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsl-2c-qbH">
+                            <rect key="frame" x="301" y="0.0" width="74" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="待评价">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sxi-lY-ga4" secondAttribute="bottom" id="6oK-X0-jj7"/>
+                        <constraint firstItem="Fsl-2c-qbH" firstAttribute="leading" secondItem="sxi-lY-ga4" secondAttribute="trailing" constant="1" id="7oP-wW-unr"/>
+                        <constraint firstAttribute="bottom" secondItem="YFd-my-ofd" secondAttribute="bottom" id="GTl-Jf-72o"/>
+                        <constraint firstItem="D2o-qH-xgL" firstAttribute="leading" secondItem="YFd-my-ofd" secondAttribute="trailing" constant="1" id="HYE-jK-6Gg"/>
+                        <constraint firstItem="YFd-my-ofd" firstAttribute="leading" secondItem="FYG-9A-v5Y" secondAttribute="leading" id="Kua-Xm-vgm"/>
+                        <constraint firstItem="YFd-my-ofd" firstAttribute="width" secondItem="D2o-qH-xgL" secondAttribute="width" id="LUT-4g-P0S"/>
+                        <constraint firstItem="D2o-qH-xgL" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="top" id="NlD-Jb-umg"/>
+                        <constraint firstItem="chj-0d-aZ8" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="top" id="OUg-Oe-Thb"/>
+                        <constraint firstItem="chj-0d-aZ8" firstAttribute="leading" secondItem="D2o-qH-xgL" secondAttribute="trailing" constant="1" id="Pgc-7a-kRA"/>
+                        <constraint firstItem="D2o-qH-xgL" firstAttribute="width" secondItem="chj-0d-aZ8" secondAttribute="width" id="RhE-EZ-zwY"/>
+                        <constraint firstAttribute="trailing" secondItem="Fsl-2c-qbH" secondAttribute="trailing" id="V2m-Te-dJg"/>
+                        <constraint firstItem="sxi-lY-ga4" firstAttribute="width" secondItem="Fsl-2c-qbH" secondAttribute="width" id="Xbg-VD-FEt"/>
+                        <constraint firstItem="YFd-my-ofd" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="top" id="YNM-bc-Cox"/>
+                        <constraint firstItem="chj-0d-aZ8" firstAttribute="width" secondItem="sxi-lY-ga4" secondAttribute="width" id="jRf-Oj-GJt"/>
+                        <constraint firstAttribute="height" constant="41" id="pSz-Ff-pQg"/>
+                        <constraint firstItem="Fsl-2c-qbH" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="top" id="pj0-6b-kUZ"/>
+                        <constraint firstItem="sxi-lY-ga4" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="top" id="qQD-eb-zGf"/>
+                        <constraint firstItem="sxi-lY-ga4" firstAttribute="leading" secondItem="chj-0d-aZ8" secondAttribute="trailing" constant="1" id="sJX-y3-KR9"/>
+                        <constraint firstAttribute="bottom" secondItem="Fsl-2c-qbH" secondAttribute="bottom" id="wEX-wI-dfb"/>
+                        <constraint firstAttribute="bottom" secondItem="D2o-qH-xgL" secondAttribute="bottom" id="wff-bv-6K4"/>
+                        <constraint firstAttribute="bottom" secondItem="chj-0d-aZ8" secondAttribute="bottom" id="yIZ-2a-UrI"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R2c-lc-xg9">
+                    <rect key="frame" x="0.0" y="41" width="375" height="626"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KMB-Hl-A0C"/>
+                        <outlet property="delegate" destination="-1" id="gmP-kp-lM7"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="9hO-y1-Dxu"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="TS0-3o-kaD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="R2c-lc-xg9" secondAttribute="bottom" id="9X7-ZO-RKI"/>
+                <constraint firstAttribute="trailing" secondItem="FYG-9A-v5Y" secondAttribute="trailing" id="Oih-9W-gkh"/>
+                <constraint firstItem="FYG-9A-v5Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c03-yc-88r"/>
+                <constraint firstItem="FYG-9A-v5Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fdx-Dt-L2U"/>
+                <constraint firstItem="R2c-lc-xg9" firstAttribute="top" secondItem="FYG-9A-v5Y" secondAttribute="bottom" id="lr6-mv-faV"/>
+                <constraint firstItem="R2c-lc-xg9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s1K-tM-N7R"/>
+                <constraint firstAttribute="trailing" secondItem="R2c-lc-xg9" secondAttribute="trailing" id="vR9-Lx-F7t"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

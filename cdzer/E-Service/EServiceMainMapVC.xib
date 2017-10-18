@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EServiceMainMapVC">
+            <connections>
+                <outlet property="bottomBtnsView" destination="5kB-PT-Cd5" id="6Tm-dy-Ma2"/>
+                <outlet property="mapView" destination="BhF-Jj-b0S" id="O3m-P2-rkI"/>
+                <outlet property="searchBar" destination="ACU-fk-eE7" id="T5Z-sz-2rl"/>
+                <outlet property="secondEasyOrderBtn" destination="dZK-yO-aST" id="84d-zq-H4e"/>
+                <outlet property="secondManualOrderBtn" destination="cQC-Oj-zw2" id="Aec-Rg-O08"/>
+                <outlet property="singleEasyOrderBtn" destination="Ypa-tn-g5a" id="Khw-tJ-b3z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhF-Jj-b0S" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="请输入11位的专员手机号码" translatesAutoresizingMaskIntoConstraints="NO" id="ACU-fk-eE7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="barTintColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FCU-iH-6fm"/>
+                    </connections>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kB-PT-Cd5">
+                    <rect key="frame" x="0.0" y="669" width="414" height="67"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZK-yO-aST">
+                            <rect key="frame" x="12" y="12" width="281.5" height="43"/>
+                            <color key="backgroundColor" red="0.28627450980392155" green="0.7803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="快速下单">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="orderAction:" destination="-1" eventType="touchUpInside" id="OQc-Em-0Yx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-Oj-zw2">
+                            <rect key="frame" x="305" y="12" width="96.5" height="43"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.68627450980392157" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="预约">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="orderAction:" destination="-1" eventType="touchUpInside" id="wki-vz-AhA"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypa-tn-g5a">
+                            <rect key="frame" x="12" y="12" width="390" height="43"/>
+                            <color key="backgroundColor" red="0.28627450980000002" green="0.78039215689999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="快速下单">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="orderAction:" destination="-1" eventType="touchUpInside" id="tPc-YR-U1h"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="dZK-yO-aST" firstAttribute="leading" secondItem="5kB-PT-Cd5" secondAttribute="leading" constant="12" id="6zv-fl-Yjg"/>
+                        <constraint firstItem="dZK-yO-aST" firstAttribute="width" secondItem="cQC-Oj-zw2" secondAttribute="width" multiplier="280:96" id="AYF-aw-Sxb"/>
+                        <constraint firstItem="cQC-Oj-zw2" firstAttribute="leading" secondItem="dZK-yO-aST" secondAttribute="trailing" constant="12" id="DuK-UK-jql"/>
+                        <constraint firstItem="Ypa-tn-g5a" firstAttribute="height" secondItem="dZK-yO-aST" secondAttribute="height" id="E3q-tc-9q3"/>
+                        <constraint firstAttribute="trailing" secondItem="Ypa-tn-g5a" secondAttribute="trailing" constant="12" id="ES2-CA-iYZ"/>
+                        <constraint firstItem="Ypa-tn-g5a" firstAttribute="centerY" secondItem="5kB-PT-Cd5" secondAttribute="centerY" id="HBv-Nh-hBU"/>
+                        <constraint firstAttribute="trailing" secondItem="cQC-Oj-zw2" secondAttribute="trailing" constant="12" id="HEu-Kp-fMG"/>
+                        <constraint firstItem="cQC-Oj-zw2" firstAttribute="centerY" secondItem="5kB-PT-Cd5" secondAttribute="centerY" id="NsE-yO-Snt"/>
+                        <constraint firstItem="dZK-yO-aST" firstAttribute="height" secondItem="5kB-PT-Cd5" secondAttribute="height" multiplier="43:67" id="YJV-yc-DDE"/>
+                        <constraint firstAttribute="width" secondItem="5kB-PT-Cd5" secondAttribute="height" multiplier="414:67" id="abq-eo-UiK"/>
+                        <constraint firstItem="Ypa-tn-g5a" firstAttribute="leading" secondItem="5kB-PT-Cd5" secondAttribute="leading" constant="12" id="eHI-1b-THo"/>
+                        <constraint firstItem="dZK-yO-aST" firstAttribute="height" secondItem="cQC-Oj-zw2" secondAttribute="height" id="rfx-FL-FR8"/>
+                        <constraint firstItem="dZK-yO-aST" firstAttribute="centerY" secondItem="5kB-PT-Cd5" secondAttribute="centerY" id="vYp-Fp-RWL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHo-YC-but">
+                    <rect key="frame" x="358" y="600" width="44" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="UPl-uq-6Ms"/>
+                        <constraint firstAttribute="width" secondItem="NHo-YC-but" secondAttribute="height" multiplier="44:41" id="hNK-Wt-4ED"/>
+                    </constraints>
+                    <state key="normal" image="eserivce_locate_icon.png"/>
+                    <connections>
+                        <action selector="locateCurrentView" destination="-1" eventType="touchUpInside" id="Ztz-Se-lwm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej8-dX-tQf">
+                    <rect key="frame" x="358" y="549" width="44" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="4Yp-Tv-04M"/>
+                        <constraint firstAttribute="width" secondItem="Ej8-dX-tQf" secondAttribute="height" multiplier="44:41" id="mw7-KI-wIx"/>
+                    </constraints>
+                    <state key="normal" image="eserivce_search_addr_icon.png"/>
+                    <connections>
+                        <action selector="pushToSelectLocation" destination="-1" eventType="touchUpInside" id="oQz-IG-EL6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ACU-fk-eE7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="05Y-mR-0uJ"/>
+                <constraint firstAttribute="trailing" secondItem="5kB-PT-Cd5" secondAttribute="trailing" id="1ZZ-iA-eJ5"/>
+                <constraint firstAttribute="trailing" secondItem="BhF-Jj-b0S" secondAttribute="trailing" id="8JY-Cb-O2c"/>
+                <constraint firstItem="5kB-PT-Cd5" firstAttribute="top" secondItem="NHo-YC-but" secondAttribute="bottom" constant="28" id="9Qc-Ub-FoI"/>
+                <constraint firstItem="5kB-PT-Cd5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Di0-ha-swH"/>
+                <constraint firstItem="BhF-Jj-b0S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JLP-5H-ct4"/>
+                <constraint firstAttribute="trailing" secondItem="ACU-fk-eE7" secondAttribute="trailing" id="Kv1-KW-eSw"/>
+                <constraint firstAttribute="trailing" secondItem="NHo-YC-but" secondAttribute="trailing" constant="12" id="RVA-sB-e09"/>
+                <constraint firstItem="ACU-fk-eE7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="US5-g9-2mL"/>
+                <constraint firstAttribute="bottom" secondItem="BhF-Jj-b0S" secondAttribute="bottom" id="eZ7-J5-hyv"/>
+                <constraint firstAttribute="trailing" secondItem="Ej8-dX-tQf" secondAttribute="trailing" constant="12" id="emi-wP-tXc"/>
+                <constraint firstItem="BhF-Jj-b0S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hqC-SQ-0Oo"/>
+                <constraint firstItem="Ej8-dX-tQf" firstAttribute="width" secondItem="Ej8-dX-tQf" secondAttribute="height" multiplier="44:41" id="lXW-xY-vpr"/>
+                <constraint firstItem="NHo-YC-but" firstAttribute="top" secondItem="Ej8-dX-tQf" secondAttribute="bottom" constant="10" id="niE-gL-qEv"/>
+                <constraint firstAttribute="bottom" secondItem="5kB-PT-Cd5" secondAttribute="bottom" id="yM2-sC-AVM"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="293" y="233"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eserivce_locate_icon.png" width="44" height="41"/>
+        <image name="eserivce_search_addr_icon.png" width="44" height="41"/>
+    </resources>
+</document>

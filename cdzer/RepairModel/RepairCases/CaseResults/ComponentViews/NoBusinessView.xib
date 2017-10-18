@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoBusinessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-Wb-nXC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyr-X8-RBt">
+                            <rect key="frame" x="26" y="143" width="323" height="228.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noBusiness.png" translatesAutoresizingMaskIntoConstraints="NO" id="6pt-gP-ath">
+                                    <rect key="frame" x="74.5" y="28.5" width="196.5" height="143"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="6pt-gP-ath" secondAttribute="height" multiplier="217:158" id="pvE-PD-npe"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHx-5d-LTd">
+                                    <rect key="frame" x="0.0" y="171.5" width="323" height="57"/>
+                                    <state key="normal" title="我知道了">
+                                        <color key="titleColor" red="0.28627450980392155" green="0.7803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0d1-AV-yOe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="6pt-gP-ath" firstAttribute="centerX" secondItem="Yyr-X8-RBt" secondAttribute="centerX" multiplier="1.06906" id="F5P-ad-IWL"/>
+                                <constraint firstItem="SHx-5d-LTd" firstAttribute="leading" secondItem="Yyr-X8-RBt" secondAttribute="leading" id="Ic3-NK-kDq"/>
+                                <constraint firstAttribute="trailing" secondItem="SHx-5d-LTd" secondAttribute="trailing" id="QrC-c4-oJn"/>
+                                <constraint firstAttribute="width" secondItem="Yyr-X8-RBt" secondAttribute="height" multiplier="181:128" id="TtU-zE-Vqo"/>
+                                <constraint firstAttribute="bottom" secondItem="SHx-5d-LTd" secondAttribute="bottom" id="VyH-SP-XTd"/>
+                                <constraint firstItem="6pt-gP-ath" firstAttribute="centerY" secondItem="Yyr-X8-RBt" secondAttribute="centerY" multiplier="0.875" id="j2P-pQ-l74"/>
+                                <constraint firstItem="SHx-5d-LTd" firstAttribute="top" secondItem="6pt-gP-ath" secondAttribute="bottom" id="tmm-uz-Lh3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.50482219827586206" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6pt-gP-ath" firstAttribute="width" secondItem="4ek-Wb-nXC" secondAttribute="height" multiplier="217:736" id="74W-UA-dab"/>
+                        <constraint firstItem="Yyr-X8-RBt" firstAttribute="centerX" secondItem="4ek-Wb-nXC" secondAttribute="centerX" id="G2d-9w-egf"/>
+                        <constraint firstAttribute="trailing" secondItem="Yyr-X8-RBt" secondAttribute="trailing" constant="26" id="nQG-JW-Fhk"/>
+                        <constraint firstItem="Yyr-X8-RBt" firstAttribute="centerY" secondItem="4ek-Wb-nXC" secondAttribute="centerY" multiplier="0.771739" id="xcy-nL-4K3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4ek-Wb-nXC" secondAttribute="trailing" id="DAE-Sy-3sV"/>
+                <constraint firstItem="4ek-Wb-nXC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c0R-GX-cL4"/>
+                <constraint firstAttribute="bottom" secondItem="4ek-Wb-nXC" secondAttribute="bottom" id="gGc-cJ-RpJ"/>
+                <constraint firstItem="4ek-Wb-nXC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lPB-SY-kKp"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="Yyr-X8-RBt" id="B0e-WP-qQ2"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="noBusiness.png" width="217" height="158"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAddressesVC">
+            <connections>
+                <outlet property="submitButton" destination="Zdg-Oe-DQP" id="8ye-vc-2hE"/>
+                <outlet property="tableView" destination="k7T-64-03v" id="ljY-Re-wYO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSS-7Y-28j">
+                    <rect key="frame" x="0.0" y="615" width="375" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdg-Oe-DQP">
+                            <rect key="frame" x="26.5" y="6" width="322" height="40"/>
+                            <color key="backgroundColor" red="0.28627450980000002" green="0.78039215689999997" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pgB-bQ-uVf"/>
+                            </constraints>
+                            <state key="normal" title="添加地址">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pushToAddAddress" destination="-1" eventType="touchUpInside" id="gzx-0G-YIh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Zdg-Oe-DQP" firstAttribute="centerX" secondItem="bSS-7Y-28j" secondAttribute="centerX" id="BOJ-UK-Dre"/>
+                        <constraint firstAttribute="bottom" secondItem="Zdg-Oe-DQP" secondAttribute="bottom" constant="6" id="N8N-SI-yJE"/>
+                        <constraint firstItem="Zdg-Oe-DQP" firstAttribute="width" secondItem="bSS-7Y-28j" secondAttribute="width" multiplier="0.86" id="Rcl-hM-vTm"/>
+                        <constraint firstItem="Zdg-Oe-DQP" firstAttribute="top" secondItem="bSS-7Y-28j" secondAttribute="top" constant="6" id="bpc-UJ-lV7"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k7T-64-03v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="615"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SLJ-wn-a5U"/>
+                        <outlet property="delegate" destination="-1" id="ilk-ms-aU5"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="yeo-VT-0b2"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="s4b-j7-NhV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bSS-7Y-28j" secondAttribute="trailing" id="7A2-6W-eyh"/>
+                <constraint firstItem="k7T-64-03v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Pf-cU-yoa"/>
+                <constraint firstItem="bSS-7Y-28j" firstAttribute="top" secondItem="k7T-64-03v" secondAttribute="bottom" id="NFJ-wN-egk"/>
+                <constraint firstAttribute="bottom" secondItem="bSS-7Y-28j" secondAttribute="bottom" id="Nue-6q-YVY"/>
+                <constraint firstItem="bSS-7Y-28j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iu9-9g-jqF"/>
+                <constraint firstAttribute="trailing" secondItem="k7T-64-03v" secondAttribute="trailing" id="qAJ-TG-vyP"/>
+                <constraint firstItem="k7T-64-03v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uri-ku-a9h"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

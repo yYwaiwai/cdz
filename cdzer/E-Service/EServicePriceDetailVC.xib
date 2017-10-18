@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EServicePriceDetailVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odm-VM-Snx">
+                    <rect key="frame" x="87" y="26" width="147" height="18"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（元/次）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPF-hn-HiO">
+                            <rect key="frame" x="99" y="0.0" width="48" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E代检服务价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvi-zg-Zpe">
+                            <rect key="frame" x="0.0" y="0.0" width="99" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bPF-hn-HiO" firstAttribute="leading" secondItem="Lvi-zg-Zpe" secondAttribute="trailing" id="2Ej-dR-dw5"/>
+                        <constraint firstAttribute="bottom" secondItem="bPF-hn-HiO" secondAttribute="bottom" id="NCI-Hy-SQf"/>
+                        <constraint firstAttribute="bottom" secondItem="Lvi-zg-Zpe" secondAttribute="bottom" id="R6j-qw-Jt5"/>
+                        <constraint firstItem="bPF-hn-HiO" firstAttribute="top" secondItem="odm-VM-Snx" secondAttribute="top" id="hMK-Dw-SkD"/>
+                        <constraint firstItem="Lvi-zg-Zpe" firstAttribute="leading" secondItem="odm-VM-Snx" secondAttribute="leading" id="rwC-Vj-zE2"/>
+                        <constraint firstItem="Lvi-zg-Zpe" firstAttribute="top" secondItem="odm-VM-Snx" secondAttribute="top" id="u5p-EE-b73"/>
+                        <constraint firstAttribute="trailing" secondItem="bPF-hn-HiO" secondAttribute="trailing" id="z8o-qz-X3U"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eservice_type_inspect_price.png" translatesAutoresizingMaskIntoConstraints="NO" id="NtJ-ci-qKJ">
+                    <rect key="frame" x="17" y="94" width="286" height="191"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSB-8A-cKM">
+                    <rect key="frame" x="12" y="348" width="296" height="53"/>
+                    <string key="text">领取环保标识：指6年免检车辆；
+车辆上线检测：车辆超过6年必须上线检测的车辆，含检测站收取的费用，车辆
+检测不通过第二次检测上线免费，第三次按300元每次收取。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-hv-UIt">
+                    <rect key="frame" x="12" y="335" width="22" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NtJ-ci-qKJ" firstAttribute="top" secondItem="odm-VM-Snx" secondAttribute="bottom" constant="50" id="5L9-eb-OVB"/>
+                <constraint firstItem="K1q-hv-UIt" firstAttribute="top" secondItem="NtJ-ci-qKJ" secondAttribute="bottom" constant="50" id="CYF-31-WQU"/>
+                <constraint firstAttribute="trailing" secondItem="pSB-8A-cKM" secondAttribute="trailing" constant="12" id="Jhr-4s-7Wf"/>
+                <constraint firstItem="K1q-hv-UIt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="Kfi-d7-qfD"/>
+                <constraint firstItem="odm-VM-Snx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="Om1-xd-i5t"/>
+                <constraint firstItem="pSB-8A-cKM" firstAttribute="top" secondItem="K1q-hv-UIt" secondAttribute="bottom" id="bRP-sR-wiw"/>
+                <constraint firstItem="NtJ-ci-qKJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ccz-CD-eEl"/>
+                <constraint firstItem="pSB-8A-cKM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="sKK-D6-Zw2"/>
+                <constraint firstItem="odm-VM-Snx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xy1-zc-Ldp"/>
+            </constraints>
+            <point key="canvasLocation" x="346" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eservice_type_inspect_price.png" width="286" height="191"/>
+    </resources>
+</document>

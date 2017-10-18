@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CumulativeScoringHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet.png" translatesAutoresizingMaskIntoConstraints="NO" id="AjT-Ps-YaO">
+                    <rect key="frame" x="119" y="14" width="176" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AjT-Ps-YaO" secondAttribute="height" multiplier="176:89" id="JvU-ah-xMy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="现有积分   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c64-M1-FwU">
+                    <rect key="frame" x="182" y="33" width="50" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.97254901960784312" green="0.51764705882352946" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121010.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwW-cv-DXB">
+                    <rect key="frame" x="173.5" y="50" width="67" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="aAB-Qy-LVt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96862745098039216" green="0.51372549019607838" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c64-M1-FwU" firstAttribute="centerX" secondItem="AjT-Ps-YaO" secondAttribute="centerX" id="2Eh-8V-7WV"/>
+                <constraint firstItem="c64-M1-FwU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="33" id="IZ4-jW-KOV"/>
+                <constraint firstItem="AjT-Ps-YaO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="118.5" id="LUe-x1-5Js"/>
+                <constraint firstAttribute="trailing" secondItem="AjT-Ps-YaO" secondAttribute="trailing" constant="80" id="Mfn-cl-zPn"/>
+                <constraint firstItem="AwW-cv-DXB" firstAttribute="top" secondItem="c64-M1-FwU" secondAttribute="bottom" constant="5" id="lTv-bZ-DeW"/>
+                <constraint firstItem="AjT-Ps-YaO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13.5" id="lub-PJ-KXP"/>
+                <constraint firstItem="AwW-cv-DXB" firstAttribute="centerX" secondItem="AjT-Ps-YaO" secondAttribute="centerX" id="vBv-m5-lJU"/>
+            </constraints>
+            <connections>
+                <outlet property="existingCumulativeScoringLabel" destination="c64-M1-FwU" id="oIu-oo-Acf"/>
+                <outlet property="numberLable" destination="AwW-cv-DXB" id="dHc-C9-m70"/>
+            </connections>
+            <point key="canvasLocation" x="200.5" y="294.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wallet.png" width="176" height="113"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

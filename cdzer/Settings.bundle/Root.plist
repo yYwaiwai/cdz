@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>接口设置</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>接口连接</string>
+			<key>Key</key>
+			<string>APIsPrefixAddress</string>
+			<key>DefaultValue</key>
+			<string>https://tes.cdzer.net/</string>
+			<key>Titles</key>
+			<array>
+				<string>杨</string>
+				<string>贺</string>
+				<string>外网</string>
+				<string>测网</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>http://yang.bccar.net/</string>
+				<string>http://www.laijipai.com/</string>
+				<string>http://www.cdzer.net/</string>
+				<string>https://tes.cdzer.net/</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

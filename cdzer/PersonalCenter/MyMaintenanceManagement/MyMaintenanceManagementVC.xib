@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyMaintenanceManagementVC">
+            <connections>
+                <outlet property="buttonView" destination="eqa-5g-pN3" id="bUD-kg-6Gz"/>
+                <outlet property="maintainEntrustButton" destination="Laf-lE-7zd" id="3a0-hF-8EG"/>
+                <outlet property="maintainSettleUpButton" destination="OcS-ag-67c" id="raJ-im-bab"/>
+                <outlet property="maintenanceAndDiagnosisButton" destination="cWA-tl-U9n" id="01y-C0-EV2"/>
+                <outlet property="maintenanceAppointmentButton" destination="Lyt-jq-bLb" id="aez-d6-DyM"/>
+                <outlet property="tableView" destination="VPe-rQ-UK5" id="0AG-9m-hFz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-5g-pN3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyt-jq-bLb">
+                            <rect key="frame" x="0.0" y="0.0" width="94" height="43"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="维修预约">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-tl-U9n">
+                            <rect key="frame" x="94" y="0.0" width="93.5" height="43"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="维修诊断">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-lE-7zd">
+                            <rect key="frame" x="187.5" y="0.0" width="94" height="43"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="维修委托">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-ag-67c">
+                            <rect key="frame" x="281.5" y="0.0" width="93.5" height="43"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="维修结算">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="OcS-ag-67c" firstAttribute="top" secondItem="eqa-5g-pN3" secondAttribute="top" id="0PB-uX-8Fy"/>
+                        <constraint firstAttribute="bottom" secondItem="OcS-ag-67c" secondAttribute="bottom" id="2gy-h0-4nb"/>
+                        <constraint firstItem="cWA-tl-U9n" firstAttribute="width" secondItem="Laf-lE-7zd" secondAttribute="width" id="39a-hq-f8J"/>
+                        <constraint firstAttribute="trailing" secondItem="OcS-ag-67c" secondAttribute="trailing" id="N5m-bs-lbz"/>
+                        <constraint firstAttribute="bottom" secondItem="Lyt-jq-bLb" secondAttribute="bottom" id="Np5-jh-hGe"/>
+                        <constraint firstAttribute="bottom" secondItem="cWA-tl-U9n" secondAttribute="bottom" id="NsY-TC-4B9"/>
+                        <constraint firstItem="Laf-lE-7zd" firstAttribute="width" secondItem="OcS-ag-67c" secondAttribute="width" id="RW2-Ir-DWQ"/>
+                        <constraint firstItem="cWA-tl-U9n" firstAttribute="leading" secondItem="Lyt-jq-bLb" secondAttribute="trailing" id="Sa0-Fa-NGb"/>
+                        <constraint firstItem="cWA-tl-U9n" firstAttribute="top" secondItem="eqa-5g-pN3" secondAttribute="top" id="UAl-mR-til"/>
+                        <constraint firstItem="Lyt-jq-bLb" firstAttribute="width" secondItem="cWA-tl-U9n" secondAttribute="width" id="aJC-uX-88Q"/>
+                        <constraint firstItem="Laf-lE-7zd" firstAttribute="leading" secondItem="cWA-tl-U9n" secondAttribute="trailing" id="b1Y-3i-Tne"/>
+                        <constraint firstItem="OcS-ag-67c" firstAttribute="leading" secondItem="Laf-lE-7zd" secondAttribute="trailing" id="gMe-79-5oL"/>
+                        <constraint firstItem="Laf-lE-7zd" firstAttribute="top" secondItem="eqa-5g-pN3" secondAttribute="top" id="grN-wZ-oN1"/>
+                        <constraint firstAttribute="height" constant="43" id="kPQ-o9-8OK"/>
+                        <constraint firstItem="Lyt-jq-bLb" firstAttribute="top" secondItem="eqa-5g-pN3" secondAttribute="top" id="o3k-a7-b0j"/>
+                        <constraint firstItem="Lyt-jq-bLb" firstAttribute="leading" secondItem="eqa-5g-pN3" secondAttribute="leading" id="xle-Io-zCs"/>
+                        <constraint firstAttribute="bottom" secondItem="Laf-lE-7zd" secondAttribute="bottom" id="zT8-iO-JPk"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-rQ-UK5">
+                    <rect key="frame" x="0.0" y="43" width="375" height="624"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9W7-Fn-Sxk"/>
+                        <outlet property="delegate" destination="-1" id="AuZ-0a-jyA"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="qHq-4V-uEY"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="k9k-dD-kik"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eqa-5g-pN3" secondAttribute="trailing" id="5kx-gQ-yXq"/>
+                <constraint firstItem="eqa-5g-pN3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MZ4-uJ-iYB"/>
+                <constraint firstItem="eqa-5g-pN3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NjG-ca-S4W"/>
+                <constraint firstAttribute="trailing" secondItem="VPe-rQ-UK5" secondAttribute="trailing" id="Yc9-u5-aGk"/>
+                <constraint firstAttribute="bottom" secondItem="VPe-rQ-UK5" secondAttribute="bottom" id="nnc-ef-6cY"/>
+                <constraint firstItem="VPe-rQ-UK5" firstAttribute="top" secondItem="eqa-5g-pN3" secondAttribute="bottom" id="q7F-Rg-VvJ"/>
+                <constraint firstItem="VPe-rQ-UK5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wzG-sU-0x9"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

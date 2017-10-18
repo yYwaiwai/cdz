@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductInfoSectionCell">
+            <connections>
+                <outlet property="commentTextView" destination="iN0-l3-epB" id="mmT-5k-EnV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view hidden="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductInfoSectionTextView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-aM-XEB">
+                    <rect key="frame" x="282" y="8" width="30" height="40"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="hideTextView" destination="iN0-l3-epB" eventType="touchUpInside" id="FOb-Hd-j1n"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="留言：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sb-4v-RIZ">
+                    <rect key="frame" x="8" y="14" width="43" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-nd-nk2">
+                    <rect key="frame" x="51" y="8" width="219" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4FW-e0-8ca"/>
+                    </constraints>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="psf-Fp-ubB"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Sb-4v-RIZ" secondAttribute="bottom" constant="15" id="Asb-xz-Jv1"/>
+                <constraint firstAttribute="trailing" secondItem="1iN-aM-XEB" secondAttribute="trailing" constant="8" id="FAD-1S-W0q"/>
+                <constraint firstItem="1iN-aM-XEB" firstAttribute="leading" secondItem="0yK-nd-nk2" secondAttribute="trailing" constant="12" id="H8Q-WH-moQ"/>
+                <constraint firstAttribute="bottom" secondItem="1iN-aM-XEB" secondAttribute="bottom" constant="8" id="JZa-EU-R0k"/>
+                <constraint firstAttribute="bottom" secondItem="0yK-nd-nk2" secondAttribute="bottom" constant="8" id="Jbp-3a-gxF"/>
+                <constraint firstItem="0yK-nd-nk2" firstAttribute="leading" secondItem="2Sb-4v-RIZ" secondAttribute="trailing" id="N1y-d2-e48"/>
+                <constraint firstItem="2Sb-4v-RIZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="acv-TQ-nUD"/>
+                <constraint firstItem="1iN-aM-XEB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="kcL-gy-U9j"/>
+                <constraint firstItem="0yK-nd-nk2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="msf-SE-Ozs"/>
+                <constraint firstItem="2Sb-4v-RIZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zOO-Sr-8O7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentTextView" destination="0yK-nd-nk2" id="WnF-pj-cqH"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="91"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

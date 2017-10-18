@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepairSubGuideVC">
+            <connections>
+                <outlet property="tableView" destination="al5-if-3of" id="QV8-Uv-CJK"/>
+                <outlet property="upperBtnsView" destination="Hs9-wD-zMG" id="5dX-KU-WzU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hs9-wD-zMG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="TKC-QT-ero"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="al5-if-3of">
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1fQ-TP-OgR"/>
+                        <outlet property="delegate" destination="-1" id="VZB-SO-5a3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="al5-if-3of" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1B3-rA-tjD"/>
+                <constraint firstItem="al5-if-3of" firstAttribute="top" secondItem="Hs9-wD-zMG" secondAttribute="bottom" id="3UT-SE-1zz"/>
+                <constraint firstItem="Hs9-wD-zMG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6WS-Dm-ufi"/>
+                <constraint firstAttribute="bottom" secondItem="al5-if-3of" secondAttribute="bottom" id="HFq-ph-KFx"/>
+                <constraint firstAttribute="trailing" secondItem="al5-if-3of" secondAttribute="trailing" id="VIF-Vy-hte"/>
+                <constraint firstAttribute="trailing" secondItem="Hs9-wD-zMG" secondAttribute="trailing" id="orv-3R-xSa"/>
+                <constraint firstItem="Hs9-wD-zMG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yB4-JC-v44"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCell" id="gTV-IL-0wX" customClass="GuideCell">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="345"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="345"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SYz-K0-tVM">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="345"/>
+                    </imageView>
+                    <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUw-ZL-6qE">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="345"/>
+                        <connections>
+                            <action selector="startApp:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fPX-ed-g9O"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SYz-K0-tVM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="595-2P-bZ7"/>
+                <constraint firstItem="VUw-ZL-6qE" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NDc-Hw-szc"/>
+                <constraint firstItem="VUw-ZL-6qE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Nse-ez-hNv"/>
+                <constraint firstAttribute="trailing" secondItem="SYz-K0-tVM" secondAttribute="trailing" id="RxD-Sh-D1E"/>
+                <constraint firstItem="SYz-K0-tVM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Uj1-W7-muN"/>
+                <constraint firstAttribute="bottom" secondItem="SYz-K0-tVM" secondAttribute="bottom" id="XH6-ZU-ZSx"/>
+                <constraint firstItem="SYz-K0-tVM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dSN-LP-5Wk"/>
+                <constraint firstItem="SYz-K0-tVM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="h91-j4-c48"/>
+                <constraint firstItem="VUw-ZL-6qE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pvc-C8-ofM"/>
+                <constraint firstAttribute="trailing" secondItem="VUw-ZL-6qE" secondAttribute="trailing" id="qfR-f0-yXJ"/>
+                <constraint firstItem="VUw-ZL-6qE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wwx-cE-jAL"/>
+                <constraint firstAttribute="bottom" secondItem="VUw-ZL-6qE" secondAttribute="bottom" id="x8M-Gf-Kpt"/>
+            </constraints>
+            <size key="customSize" width="222" height="345"/>
+            <connections>
+                <outlet property="imageView" destination="SYz-K0-tVM" id="xdH-A6-82A"/>
+                <outlet property="startButton" destination="VUw-ZL-6qE" id="dma-N9-IQB"/>
+            </connections>
+            <point key="canvasLocation" x="441" y="270.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

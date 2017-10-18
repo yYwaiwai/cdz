@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSAutosDrivingRecordVC">
+            <connections>
+                <outlet property="dateTimeSelView" destination="iN0-l3-epB" id="7Qz-RN-Paa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GPSADRDateTimeSelectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIX-Xq-roy">
+                    <rect key="frame" x="31" y="120" width="258" height="240"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WD-rx-xcp">
+                            <rect key="frame" x="6" y="0.0" width="246" height="34"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5f-6F-xnu">
+                            <rect key="frame" x="25.5" y="47" width="77" height="33.5"/>
+                            <color key="backgroundColor" red="0.31372549019607843" green="0.78431372549019607" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U5f-6F-xnu" secondAttribute="height" multiplier="2.30769" id="TUV-NK-raw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="开始时间">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showUpDateTimePicker:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Ca-mm-jRp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR6-8h-IpJ">
+                            <rect key="frame" x="155.5" y="47" width="77" height="33.5"/>
+                            <color key="backgroundColor" red="0.31372549020000001" green="0.7843137255" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="结束时间">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showUpDateTimePicker:" destination="iN0-l3-epB" eventType="touchUpInside" id="leZ-Uk-h8w"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快捷选择(24小时内)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRx-aE-0zi">
+                            <rect key="frame" x="70" y="90.5" width="118" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="900" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-l8-Hty">
+                            <rect key="frame" x="13" y="117.5" width="67.5" height="33"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="2小时">
+                                <color key="titleColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="17U-Oa-mid"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="901" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrj-JT-VYn">
+                            <rect key="frame" x="95" y="117.5" width="67" height="33"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vrj-JT-VYn" secondAttribute="height" multiplier="87:43" id="3RO-LZ-gPL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="4小时">
+                                <color key="titleColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="B9z-WG-Q6b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="902" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muz-rd-rGF">
+                            <rect key="frame" x="177.5" y="117.5" width="67.5" height="33"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="6小时">
+                                <color key="titleColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="9BR-xE-EyY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="903" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqF-BM-B8H">
+                            <rect key="frame" x="13" y="159.5" width="67.5" height="33.5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="8小时">
+                                <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZAZ-Ak-fbZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="904" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIa-77-gCd">
+                            <rect key="frame" x="95" y="159.5" width="67" height="33.5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="12小时">
+                                <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="hyk-xO-IIO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="905" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQz-6Z-fQW">
+                            <rect key="frame" x="177.5" y="159.5" width="67.5" height="33.5"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="24小时">
+                                <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dateTimeRangleSelection:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Ma-gd-52j"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xUB-6Y-IvM">
+                            <rect key="frame" x="116" y="203.5" width="25" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igk-Gd-hJV">
+                            <rect key="frame" x="14" y="201.5" width="230" height="33"/>
+                            <color key="backgroundColor" red="0.31372549019607843" green="0.78431372549019607" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="igk-Gd-hJV" secondAttribute="height" multiplier="6.88462" id="3rs-q7-eED"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submitDateTime" destination="iN0-l3-epB" eventType="touchUpInside" id="rfS-9B-rN9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="muz-rd-rGF" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" multiplier="1.63772" id="11y-b3-UTu"/>
+                        <constraint firstAttribute="trailing" secondItem="5WD-rx-xcp" secondAttribute="trailing" constant="6" id="7EN-75-7iw"/>
+                        <constraint firstItem="vrj-JT-VYn" firstAttribute="centerY" secondItem="8Zr-l8-Hty" secondAttribute="centerY" id="8fm-WQ-65C"/>
+                        <constraint firstItem="DR6-8h-IpJ" firstAttribute="centerY" secondItem="U5f-6F-xnu" secondAttribute="centerY" id="8ut-jh-CAL"/>
+                        <constraint firstItem="U5f-6F-xnu" firstAttribute="width" secondItem="HIX-Xq-roy" secondAttribute="width" multiplier="0.299401" id="9ap-gw-8LI"/>
+                        <constraint firstAttribute="width" secondItem="HIX-Xq-roy" secondAttribute="height" multiplier="1.07511" id="EKL-gk-alK"/>
+                        <constraint firstItem="5WD-rx-xcp" firstAttribute="leading" secondItem="HIX-Xq-roy" secondAttribute="leading" constant="6" id="FNe-MI-xmw"/>
+                        <constraint firstItem="qIa-77-gCd" firstAttribute="width" secondItem="vrj-JT-VYn" secondAttribute="width" id="Fvz-fS-uNg"/>
+                        <constraint firstItem="AqF-BM-B8H" firstAttribute="height" secondItem="qIa-77-gCd" secondAttribute="height" id="H6C-JU-n9Y"/>
+                        <constraint firstItem="GQz-6Z-fQW" firstAttribute="height" secondItem="qIa-77-gCd" secondAttribute="height" id="HA9-yc-5Eb"/>
+                        <constraint firstItem="5WD-rx-xcp" firstAttribute="top" secondItem="HIX-Xq-roy" secondAttribute="top" id="IoD-Gd-Vo8"/>
+                        <constraint firstItem="8Zr-l8-Hty" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" multiplier="0.362275" id="LhM-rd-3la"/>
+                        <constraint firstItem="8Zr-l8-Hty" firstAttribute="height" secondItem="vrj-JT-VYn" secondAttribute="height" id="PDe-zG-IVB"/>
+                        <constraint firstItem="8Zr-l8-Hty" firstAttribute="width" secondItem="vrj-JT-VYn" secondAttribute="width" id="TPP-Xw-owV"/>
+                        <constraint firstItem="muz-rd-rGF" firstAttribute="height" secondItem="vrj-JT-VYn" secondAttribute="height" id="Tfs-ha-fYy"/>
+                        <constraint firstItem="muz-rd-rGF" firstAttribute="centerY" secondItem="vrj-JT-VYn" secondAttribute="centerY" id="VWh-8o-Ndp"/>
+                        <constraint firstItem="qIa-77-gCd" firstAttribute="centerY" secondItem="HIX-Xq-roy" secondAttribute="centerY" multiplier="1.46945" id="Vmx-VN-yuJ"/>
+                        <constraint firstItem="vrj-JT-VYn" firstAttribute="width" secondItem="HIX-Xq-roy" secondAttribute="width" multiplier="0.259481" id="Wf6-gr-YHH"/>
+                        <constraint firstItem="cRx-aE-0zi" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" id="XRA-mb-sXG"/>
+                        <constraint firstItem="U5f-6F-xnu" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" multiplier="0.497006" id="YeZ-gg-CF0"/>
+                        <constraint firstItem="qIa-77-gCd" firstAttribute="height" secondItem="vrj-JT-VYn" secondAttribute="height" id="Yrn-87-4zB"/>
+                        <constraint firstItem="GQz-6Z-fQW" firstAttribute="centerX" secondItem="muz-rd-rGF" secondAttribute="centerX" id="bTm-Gm-I7e"/>
+                        <constraint firstItem="igk-Gd-hJV" firstAttribute="centerY" secondItem="HIX-Xq-roy" secondAttribute="centerY" multiplier="1.81672" id="bVq-0k-SgX"/>
+                        <constraint firstItem="xUB-6Y-IvM" firstAttribute="centerY" secondItem="igk-Gd-hJV" secondAttribute="centerY" id="biG-JF-eOh"/>
+                        <constraint firstItem="DR6-8h-IpJ" firstAttribute="width" secondItem="U5f-6F-xnu" secondAttribute="width" id="bj0-py-1EO"/>
+                        <constraint firstItem="igk-Gd-hJV" firstAttribute="width" secondItem="HIX-Xq-roy" secondAttribute="width" multiplier="0.893214" id="cjD-Vo-XVc"/>
+                        <constraint firstItem="GQz-6Z-fQW" firstAttribute="width" secondItem="qIa-77-gCd" secondAttribute="width" id="dBr-60-Wft"/>
+                        <constraint firstItem="igk-Gd-hJV" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" id="dHs-Jh-sEf"/>
+                        <constraint firstItem="DR6-8h-IpJ" firstAttribute="height" secondItem="U5f-6F-xnu" secondAttribute="height" id="eYY-78-Epl"/>
+                        <constraint firstItem="vrj-JT-VYn" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" id="f5I-0a-SA4"/>
+                        <constraint firstItem="muz-rd-rGF" firstAttribute="width" secondItem="vrj-JT-VYn" secondAttribute="width" id="giL-g7-dpf"/>
+                        <constraint firstItem="AqF-BM-B8H" firstAttribute="centerY" secondItem="qIa-77-gCd" secondAttribute="centerY" id="h3i-m6-8wK"/>
+                        <constraint firstItem="cRx-aE-0zi" firstAttribute="centerY" secondItem="HIX-Xq-roy" secondAttribute="centerY" multiplier="0.823151" id="k3P-pF-OTo"/>
+                        <constraint firstItem="AqF-BM-B8H" firstAttribute="width" secondItem="qIa-77-gCd" secondAttribute="width" id="kXB-kK-kYw"/>
+                        <constraint firstItem="AqF-BM-B8H" firstAttribute="centerX" secondItem="8Zr-l8-Hty" secondAttribute="centerX" id="paK-OG-yo0"/>
+                        <constraint firstItem="GQz-6Z-fQW" firstAttribute="centerY" secondItem="qIa-77-gCd" secondAttribute="centerY" id="qA0-Kf-vft"/>
+                        <constraint firstItem="5WD-rx-xcp" firstAttribute="height" secondItem="HIX-Xq-roy" secondAttribute="height" multiplier="0.141631" id="qpQ-wv-9Ke"/>
+                        <constraint firstItem="qIa-77-gCd" firstAttribute="centerX" secondItem="vrj-JT-VYn" secondAttribute="centerX" id="sjL-N5-cxn"/>
+                        <constraint firstItem="U5f-6F-xnu" firstAttribute="centerY" secondItem="HIX-Xq-roy" secondAttribute="centerY" multiplier="0.533762" id="x9G-b1-eVJ"/>
+                        <constraint firstItem="DR6-8h-IpJ" firstAttribute="centerX" secondItem="HIX-Xq-roy" secondAttribute="centerX" multiplier="1.50299" id="y1k-bg-95q"/>
+                        <constraint firstItem="vrj-JT-VYn" firstAttribute="centerY" secondItem="HIX-Xq-roy" secondAttribute="centerY" multiplier="1.11576" id="zc3-Er-wUi"/>
+                        <constraint firstItem="xUB-6Y-IvM" firstAttribute="centerX" secondItem="igk-Gd-hJV" secondAttribute="centerX" id="zsE-JM-xPy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HIX-Xq-roy" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.806763" id="2Db-5G-ljq"/>
+                <constraint firstItem="HIX-Xq-roy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="pdp-ig-bvb"/>
+                <constraint firstItem="HIX-Xq-roy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qhZ-JV-BAa"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="HIX-Xq-roy" id="Z6X-Hg-v1h"/>
+                <outlet property="dateTimeTextField" destination="xUB-6Y-IvM" id="AZw-f0-bu4"/>
+                <outlet property="endDateTimeButton" destination="DR6-8h-IpJ" id="I6Q-5n-mmv"/>
+                <outlet property="startDateTimeButton" destination="U5f-6F-xnu" id="y70-8g-jkk"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="195"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

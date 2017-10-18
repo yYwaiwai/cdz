@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SNSSLViewFilterView">
+            <connections>
+                <outlet property="itemBrandListView" destination="Csu-Zr-sxg" id="zWC-9W-FbI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Csu-Zr-sxg" customClass="SNSSLVFItemBrandListComponent">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkw-oO-gvI" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="hideFilterViewFromItemBrandList" destination="-1" eventType="touchUpInside" id="aNS-vG-gyh"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hC-oT-v2N" userLabel="Collection View Container">
+                    <rect key="frame" x="414" y="0.0" width="300" height="736"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFh-fq-Iwz">
+                            <rect key="frame" x="12" y="20" width="276" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="eNy-nv-KNE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EzK-NY-GbK">
+                            <rect key="frame" x="0.0" y="56" width="300" height="680"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="fFR-tz-qY2">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="Csu-Zr-sxg" id="08V-GH-2WE"/>
+                                <outlet property="delegate" destination="Csu-Zr-sxg" id="xKp-q3-v8e"/>
+                                <outlet property="emptyDataSetDelegate" destination="Csu-Zr-sxg" id="wql-OO-O6J"/>
+                                <outlet property="emptyDataSetSource" destination="Csu-Zr-sxg" id="nhT-rd-NBx"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EzK-NY-GbK" secondAttribute="bottom" id="6Us-ta-dt8"/>
+                        <constraint firstItem="vFh-fq-Iwz" firstAttribute="top" secondItem="3hC-oT-v2N" secondAttribute="top" constant="20" id="6bR-kt-mk4"/>
+                        <constraint firstItem="vFh-fq-Iwz" firstAttribute="leading" secondItem="3hC-oT-v2N" secondAttribute="leading" constant="12" id="8g6-Z3-DpV"/>
+                        <constraint firstItem="EzK-NY-GbK" firstAttribute="top" secondItem="vFh-fq-Iwz" secondAttribute="bottom" id="UQg-gl-keA"/>
+                        <constraint firstAttribute="trailing" secondItem="vFh-fq-Iwz" secondAttribute="trailing" constant="12" id="nUo-2b-D5L"/>
+                        <constraint firstItem="EzK-NY-GbK" firstAttribute="leading" secondItem="3hC-oT-v2N" secondAttribute="leading" id="x6V-c9-YAt"/>
+                        <constraint firstAttribute="trailing" secondItem="EzK-NY-GbK" secondAttribute="trailing" id="zKs-CU-Qh6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wkw-oO-gvI" secondAttribute="bottom" id="1Cm-4n-Z23"/>
+                <constraint firstItem="wkw-oO-gvI" firstAttribute="leading" secondItem="Csu-Zr-sxg" secondAttribute="leading" id="DbT-8X-XHU"/>
+                <constraint firstAttribute="trailing" secondItem="wkw-oO-gvI" secondAttribute="trailing" id="PSA-sa-3Aa"/>
+                <constraint firstItem="wkw-oO-gvI" firstAttribute="top" secondItem="Csu-Zr-sxg" secondAttribute="top" id="VHF-4b-pl0"/>
+                <constraint firstAttribute="bottom" secondItem="3hC-oT-v2N" secondAttribute="bottom" id="d10-RD-6Xr"/>
+                <constraint firstItem="3hC-oT-v2N" firstAttribute="top" secondItem="Csu-Zr-sxg" secondAttribute="top" id="s6d-1k-Ye1"/>
+                <constraint firstItem="3hC-oT-v2N" firstAttribute="leading" secondItem="wkw-oO-gvI" secondAttribute="trailing" id="swh-Jn-Kjc"/>
+                <constraint firstItem="3hC-oT-v2N" firstAttribute="width" secondItem="Csu-Zr-sxg" secondAttribute="width" multiplier="0.724638" id="way-pT-JMu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <connections>
+                <outlet property="collectionView" destination="EzK-NY-GbK" id="6bX-3L-W1g"/>
+                <outlet property="collectionViewContainer" destination="3hC-oT-v2N" id="xrr-SQ-hxh"/>
+                <outlet property="leadingToTrailingConstraint" destination="swh-Jn-Kjc" id="7CK-Ys-6Dl"/>
+                <outlet property="maskView" destination="wkw-oO-gvI" id="aXv-2d-ShM"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="134"/>
+        </view>
+    </objects>
+</document>

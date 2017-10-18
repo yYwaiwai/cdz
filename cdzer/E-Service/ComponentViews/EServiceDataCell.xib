@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xyH-jP-eaF" customClass="EServiceDataCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xyH-jP-eaF" id="csv-oP-ElV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-Mh-Ijj">
+                        <rect key="frame" x="12" y="0.0" width="84" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29.5" id="HcH-VZ-bWG"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="tw0-ck-NGg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5P-D6-jhp">
+                        <rect key="frame" x="96" y="0.0" width="212" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z5P-D6-jhp" secondAttribute="trailing" constant="12" id="2OV-Da-Xb8"/>
+                    <constraint firstItem="Z5P-D6-jhp" firstAttribute="leading" secondItem="Hhc-Mh-Ijj" secondAttribute="trailing" id="S6h-D5-lPJ"/>
+                    <constraint firstItem="Hhc-Mh-Ijj" firstAttribute="top" secondItem="csv-oP-ElV" secondAttribute="top" id="TPa-Fb-HR9"/>
+                    <constraint firstItem="Hhc-Mh-Ijj" firstAttribute="leading" secondItem="csv-oP-ElV" secondAttribute="leading" constant="12" id="WEO-Nj-ud1"/>
+                    <constraint firstItem="Z5P-D6-jhp" firstAttribute="top" secondItem="csv-oP-ElV" secondAttribute="top" id="fh2-34-FqZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Hhc-Mh-Ijj" secondAttribute="bottom" id="wAf-aV-TJu"/>
+                    <constraint firstAttribute="bottom" secondItem="Z5P-D6-jhp" secondAttribute="bottom" id="xfZ-Ep-jmI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="Z5P-D6-jhp" id="JUj-hf-gQi"/>
+                <outlet property="titleLabel" destination="Hhc-Mh-Ijj" id="dZl-7U-Jen"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="313"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

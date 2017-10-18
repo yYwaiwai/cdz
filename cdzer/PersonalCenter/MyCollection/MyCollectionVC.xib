@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCollectionVC">
+            <connections>
+                <outlet property="commodityButton" destination="DjF-UV-QIP" id="Qbo-0x-Spt"/>
+                <outlet property="deleteBtn" destination="DA5-SM-vHF" id="F4j-Ur-T5b"/>
+                <outlet property="mechanicButton" destination="z5o-Ej-jYS" id="Ub4-ge-IiI"/>
+                <outlet property="shopButton" destination="LeT-oW-47o" id="ub9-YD-oYK"/>
+                <outlet property="tableView" destination="Acd-8F-v5p" id="4Cp-Aj-eLj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Acd-8F-v5p">
+                    <rect key="frame" x="0.0" y="40" width="375" height="583"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dvu-f0-AQp"/>
+                        <outlet property="delegate" destination="-1" id="YyS-wv-XZB"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="x2R-gv-hac"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="bXP-8l-olL"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-dt-2ag">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeT-oW-47o">
+                            <rect key="frame" x="124.5" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="店铺">
+                                <color key="titleColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="updateCollcetionType:" destination="-1" eventType="touchUpInside" id="hRe-X8-gDJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="300" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-UV-QIP">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="商品">
+                                <color key="titleColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="updateCollcetionType:" destination="-1" eventType="touchUpInside" id="x53-lj-Hom"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5o-Ej-jYS">
+                            <rect key="frame" x="249.5" y="0.0" width="125" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="技师">
+                                <color key="titleColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.97254901959999995" green="0.68627450980000004" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="updateCollcetionType:" destination="-1" eventType="touchUpInside" id="amB-j6-bdT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="z5o-Ej-jYS" secondAttribute="trailing" id="3xm-SD-sIe"/>
+                        <constraint firstItem="z5o-Ej-jYS" firstAttribute="width" secondItem="LeT-oW-47o" secondAttribute="width" id="5qU-ce-t3x"/>
+                        <constraint firstItem="DjF-UV-QIP" firstAttribute="leading" secondItem="3YT-dt-2ag" secondAttribute="leading" id="6Dy-h8-SJr"/>
+                        <constraint firstItem="DjF-UV-QIP" firstAttribute="top" secondItem="3YT-dt-2ag" secondAttribute="top" id="7z2-BC-LxD"/>
+                        <constraint firstAttribute="bottom" secondItem="DjF-UV-QIP" secondAttribute="bottom" id="Aav-WM-pl1"/>
+                        <constraint firstItem="LeT-oW-47o" firstAttribute="leading" secondItem="DjF-UV-QIP" secondAttribute="trailing" id="Jot-4L-FqV"/>
+                        <constraint firstAttribute="bottom" secondItem="z5o-Ej-jYS" secondAttribute="bottom" id="Ke1-h7-c9u"/>
+                        <constraint firstItem="LeT-oW-47o" firstAttribute="top" secondItem="3YT-dt-2ag" secondAttribute="top" id="Upa-d7-fbZ"/>
+                        <constraint firstItem="LeT-oW-47o" firstAttribute="leading" secondItem="DjF-UV-QIP" secondAttribute="trailing" id="ZXh-Tt-Wnc"/>
+                        <constraint firstItem="DjF-UV-QIP" firstAttribute="width" secondItem="LeT-oW-47o" secondAttribute="width" id="fKU-ET-UJE"/>
+                        <constraint firstItem="z5o-Ej-jYS" firstAttribute="leading" secondItem="LeT-oW-47o" secondAttribute="trailing" id="gwa-Pa-fNe"/>
+                        <constraint firstItem="z5o-Ej-jYS" firstAttribute="top" secondItem="3YT-dt-2ag" secondAttribute="top" id="nAD-lX-1l1"/>
+                        <constraint firstAttribute="bottom" secondItem="LeT-oW-47o" secondAttribute="bottom" id="oYW-s1-rK7"/>
+                        <constraint firstAttribute="height" constant="40" id="zdg-VT-Wek"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA5-SM-vHF">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.98837971687316895" green="0.35427802801132202" blue="0.34916698932647705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="kCb-8p-eU2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteAction:" destination="-1" eventType="touchUpInside" id="wHj-ug-7dO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Acd-8F-v5p" secondAttribute="trailing" id="0nh-Rt-I5R"/>
+                <constraint firstAttribute="trailing" secondItem="DA5-SM-vHF" secondAttribute="trailing" id="5s8-ik-dT5"/>
+                <constraint firstItem="Acd-8F-v5p" firstAttribute="top" secondItem="3YT-dt-2ag" secondAttribute="bottom" id="6HR-Zc-6C8"/>
+                <constraint firstItem="DA5-SM-vHF" firstAttribute="top" secondItem="Acd-8F-v5p" secondAttribute="bottom" id="9te-Ua-Vu1"/>
+                <constraint firstItem="Acd-8F-v5p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ern-uT-stc"/>
+                <constraint firstItem="3YT-dt-2ag" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HuX-TJ-Vog"/>
+                <constraint firstAttribute="bottom" secondItem="DA5-SM-vHF" secondAttribute="bottom" id="Mgq-jy-Pwh"/>
+                <constraint firstAttribute="trailing" secondItem="3YT-dt-2ag" secondAttribute="trailing" id="Zpv-qT-BLw"/>
+                <constraint firstItem="DA5-SM-vHF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kEv-kL-u50"/>
+                <constraint firstItem="3YT-dt-2ag" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nP2-sC-dKv"/>
+            </constraints>
+            <point key="canvasLocation" x="306" y="239"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

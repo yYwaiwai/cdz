@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EServiceConsultantMapAnnotationView">
+            <connections>
+                <outlet property="consultantContentView" destination="iN0-l3-epB" id="Vf4-uR-lEg"/>
+                <outlet property="consultantNameLabel" destination="r3L-xW-aFB" id="gDZ-Mw-fG4"/>
+                <outlet property="consultantPortrait" destination="36b-Wz-vGM" id="mCU-r6-HCk"/>
+                <outlet property="consultantRatingView" destination="Jf1-B6-y6K" id="tB3-FR-xJB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkV-At-tQe">
+                    <rect key="frame" x="0.0" y="0.0" width="103" height="56"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="1WN-iv-0jW"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eservice_map_annotation_view_bkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ma-eh-VVG">
+                    <rect key="frame" x="0.0" y="0.0" width="103" height="56"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="罗德" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3L-xW-aFB">
+                    <rect key="frame" x="40" y="9" width="53" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="ePU-ez-3oJ"/>
+                        <constraint firstAttribute="height" constant="16" id="lVl-ug-6gu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jf1-B6-y6K" customClass="HCSStarRatingView">
+                    <rect key="frame" x="40" y="25" width="53" height="15"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="eservice_star_unfill.png"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="eservice_star_fill.png"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="accurateHalfStars" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="36b-Wz-vGM">
+                    <rect key="frame" x="9" y="11" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Dsp-9X-LCQ"/>
+                        <constraint firstAttribute="width" secondItem="36b-Wz-vGM" secondAttribute="height" multiplier="1:1" id="cXh-4n-7SO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="r3L-xW-aFB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="0g5-Oy-PBm"/>
+                <constraint firstItem="kkV-At-tQe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3pa-9h-Z92"/>
+                <constraint firstAttribute="trailing" secondItem="r3L-xW-aFB" secondAttribute="trailing" constant="10" id="CCP-8Y-6qu"/>
+                <constraint firstItem="2ma-eh-VVG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IrT-GW-Rj3"/>
+                <constraint firstAttribute="trailing" secondItem="kkV-At-tQe" secondAttribute="trailing" id="Iri-nv-SlY"/>
+                <constraint firstItem="kkV-At-tQe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JQQ-op-89Z"/>
+                <constraint firstAttribute="bottom" secondItem="2ma-eh-VVG" secondAttribute="bottom" id="KKt-wn-AS9"/>
+                <constraint firstItem="36b-Wz-vGM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="KVx-4l-58l"/>
+                <constraint firstItem="Jf1-B6-y6K" firstAttribute="top" secondItem="r3L-xW-aFB" secondAttribute="bottom" id="LaF-ih-XmO"/>
+                <constraint firstAttribute="trailing" secondItem="Jf1-B6-y6K" secondAttribute="trailing" constant="10" id="TPO-65-LhJ"/>
+                <constraint firstItem="r3L-xW-aFB" firstAttribute="leading" secondItem="36b-Wz-vGM" secondAttribute="trailing" constant="6" id="VEH-Ts-rXw"/>
+                <constraint firstItem="36b-Wz-vGM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="aMF-SY-Dua"/>
+                <constraint firstAttribute="bottom" secondItem="kkV-At-tQe" secondAttribute="bottom" id="hvb-cK-AMj"/>
+                <constraint firstItem="Jf1-B6-y6K" firstAttribute="leading" secondItem="36b-Wz-vGM" secondAttribute="trailing" constant="6" id="j1y-tO-TV6"/>
+                <constraint firstAttribute="bottom" secondItem="Jf1-B6-y6K" secondAttribute="bottom" constant="16" id="tD1-WI-GKt"/>
+                <constraint firstItem="2ma-eh-VVG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vZ7-YT-4W7"/>
+                <constraint firstAttribute="trailing" secondItem="2ma-eh-VVG" secondAttribute="trailing" id="wQT-14-CT9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="196.5" y="174"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eservice_map_annotation_view_bkg.png" width="113" height="55"/>
+        <image name="eservice_star_fill.png" width="11" height="9"/>
+        <image name="eservice_star_unfill.png" width="11" height="9"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRightsDetailVC">
+            <connections>
+                <outlet property="tableView" destination="ea8-H8-7dv" id="69T-AY-aPd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="urd_top_bkg_img.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qte-cn-REv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qte-cn-REv" secondAttribute="height" multiplier="207:50" id="t8U-UV-o8r"/>
+                    </constraints>
+                </imageView>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcc-im-sbg">
+                    <rect key="frame" x="0.0" y="77" width="320" height="34"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="我的权益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFM-rm-T5D">
+                            <rect key="frame" x="12" y="0.0" width="56" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KFM-rm-T5D" secondAttribute="bottom" id="BEE-Mu-CpO"/>
+                        <constraint firstAttribute="height" constant="34" id="JhD-lL-Wx9"/>
+                        <constraint firstItem="KFM-rm-T5D" firstAttribute="top" secondItem="mcc-im-sbg" secondAttribute="top" id="bt6-FH-bZy"/>
+                        <constraint firstItem="KFM-rm-T5D" firstAttribute="leading" secondItem="mcc-im-sbg" secondAttribute="leading" constant="12" id="dtt-PJ-08I"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-H8-7dv">
+                    <rect key="frame" x="0.0" y="111" width="320" height="369"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IXm-8t-ftG"/>
+                        <outlet property="delegate" destination="-1" id="OaV-UP-rWL"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qte-cn-REv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="628-Pj-PoC"/>
+                <constraint firstAttribute="trailing" secondItem="mcc-im-sbg" secondAttribute="trailing" id="AOn-Zz-POd"/>
+                <constraint firstAttribute="bottom" secondItem="ea8-H8-7dv" secondAttribute="bottom" id="BA6-aN-sjS"/>
+                <constraint firstItem="ea8-H8-7dv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F9H-Ua-ko9"/>
+                <constraint firstItem="mcc-im-sbg" firstAttribute="top" secondItem="qte-cn-REv" secondAttribute="bottom" id="MVN-It-O1J"/>
+                <constraint firstItem="ea8-H8-7dv" firstAttribute="top" secondItem="mcc-im-sbg" secondAttribute="bottom" id="Ytv-6T-MZR"/>
+                <constraint firstItem="mcc-im-sbg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aXc-da-ep1"/>
+                <constraint firstAttribute="trailing" secondItem="qte-cn-REv" secondAttribute="trailing" id="cVx-mK-Gbm"/>
+                <constraint firstAttribute="trailing" secondItem="ea8-H8-7dv" secondAttribute="trailing" id="gYA-ds-1Dh"/>
+                <constraint firstItem="qte-cn-REv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rMH-bd-dln"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="urd_top_bkg_img.jpg" width="414" height="100"/>
+    </resources>
+</document>

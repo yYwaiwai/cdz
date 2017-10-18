@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSAutosDrivingBMKAnnotationView">
+            <connections>
+                <outlet property="infoView" destination="iN0-l3-epB" id="eFu-Ou-7tY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GPSAutosDrivingPathInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-PT-2FM">
+                    <rect key="frame" x="3" y="3" width="197" height="28"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="GPS_autos_info_time_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-Bp-TKT">
+                            <rect key="frame" x="6" y="7.5" width="13" height="13"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQC-LV-UgN">
+                            <rect key="frame" x="23" y="0.0" width="170" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nQC-LV-UgN" firstAttribute="top" secondItem="cxF-PT-2FM" secondAttribute="top" id="0zH-zV-xif"/>
+                        <constraint firstAttribute="bottom" secondItem="nQC-LV-UgN" secondAttribute="bottom" id="aY1-ke-ATB"/>
+                        <constraint firstItem="a4F-Bp-TKT" firstAttribute="leading" secondItem="cxF-PT-2FM" secondAttribute="leading" constant="6" id="fA6-BF-Qmu"/>
+                        <constraint firstAttribute="height" constant="28" id="sup-8c-Nyx"/>
+                        <constraint firstItem="nQC-LV-UgN" firstAttribute="leading" secondItem="a4F-Bp-TKT" secondAttribute="trailing" constant="4" id="vHc-FI-bWR"/>
+                        <constraint firstItem="a4F-Bp-TKT" firstAttribute="centerY" secondItem="cxF-PT-2FM" secondAttribute="centerY" id="z3W-sv-yt3"/>
+                        <constraint firstAttribute="trailing" secondItem="nQC-LV-UgN" secondAttribute="trailing" constant="4" id="zKK-Bb-cbA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ug3-8J-2o6">
+                    <rect key="frame" x="3" y="31" width="197" height="28"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-sC-F5U">
+                            <rect key="frame" x="0.0" y="0.0" width="98.5" height="28"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="GPS_autos_info_speed_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6h7-Fe-FEl">
+                                    <rect key="frame" x="3" y="8" width="19" height="13"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 KM/H" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb4-Au-HML">
+                                    <rect key="frame" x="26" y="0.0" width="69.5" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.28627450980000002" green="0.78039215689999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6h7-Fe-FEl" firstAttribute="centerY" secondItem="8UQ-sC-F5U" secondAttribute="centerY" id="CJF-iE-Lb2"/>
+                                <constraint firstItem="6h7-Fe-FEl" firstAttribute="leading" secondItem="8UQ-sC-F5U" secondAttribute="leading" constant="3" id="Do1-2L-0Q2"/>
+                                <constraint firstAttribute="trailing" secondItem="kb4-Au-HML" secondAttribute="trailing" constant="3" id="GNP-uj-6nh"/>
+                                <constraint firstItem="kb4-Au-HML" firstAttribute="leading" secondItem="6h7-Fe-FEl" secondAttribute="trailing" constant="4" id="INs-mm-hF7"/>
+                                <constraint firstAttribute="bottom" secondItem="kb4-Au-HML" secondAttribute="bottom" id="bKM-Zq-lJa"/>
+                                <constraint firstItem="kb4-Au-HML" firstAttribute="top" secondItem="8UQ-sC-F5U" secondAttribute="top" id="iKA-b0-hnR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-T6-eLj">
+                            <rect key="frame" x="98" y="0.0" width="98.5" height="28"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="GPS_autos_info_GSM_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="NDF-oa-p9A">
+                                    <rect key="frame" x="3" y="10" width="24" height="8"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMP-o4-tNs">
+                                    <rect key="frame" x="31" y="0.0" width="64.5" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.28627450980000002" green="0.78039215689999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="NDF-oa-p9A" firstAttribute="centerY" secondItem="PeX-T6-eLj" secondAttribute="centerY" id="0nI-RI-6Fh"/>
+                                <constraint firstItem="lMP-o4-tNs" firstAttribute="leading" secondItem="NDF-oa-p9A" secondAttribute="trailing" constant="4" id="E8e-aG-Ktj"/>
+                                <constraint firstItem="NDF-oa-p9A" firstAttribute="leading" secondItem="PeX-T6-eLj" secondAttribute="leading" constant="3" id="WAN-Pe-3UP"/>
+                                <constraint firstAttribute="bottom" secondItem="lMP-o4-tNs" secondAttribute="bottom" id="gcf-0t-qhp"/>
+                                <constraint firstItem="lMP-o4-tNs" firstAttribute="top" secondItem="PeX-T6-eLj" secondAttribute="top" id="nGt-Eo-tlU"/>
+                                <constraint firstAttribute="trailing" secondItem="lMP-o4-tNs" secondAttribute="trailing" constant="3" id="zhg-XE-ALR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="PeX-T6-eLj" secondAttribute="bottom" id="82p-Q1-G8C"/>
+                        <constraint firstItem="PeX-T6-eLj" firstAttribute="leading" secondItem="8UQ-sC-F5U" secondAttribute="trailing" id="85v-LQ-BW1"/>
+                        <constraint firstItem="PeX-T6-eLj" firstAttribute="top" secondItem="Ug3-8J-2o6" secondAttribute="top" id="BeL-hX-o38"/>
+                        <constraint firstAttribute="trailing" secondItem="PeX-T6-eLj" secondAttribute="trailing" id="Eqy-sB-ao2"/>
+                        <constraint firstItem="PeX-T6-eLj" firstAttribute="width" secondItem="8UQ-sC-F5U" secondAttribute="width" id="Wt7-kY-6Ka"/>
+                        <constraint firstItem="8UQ-sC-F5U" firstAttribute="leading" secondItem="Ug3-8J-2o6" secondAttribute="leading" id="aqs-Wn-lfG"/>
+                        <constraint firstAttribute="bottom" secondItem="8UQ-sC-F5U" secondAttribute="bottom" id="v9g-2H-6O8"/>
+                        <constraint firstItem="8UQ-sC-F5U" firstAttribute="top" secondItem="Ug3-8J-2o6" secondAttribute="top" id="wtR-4o-gSW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-c0-TPu">
+                    <rect key="frame" x="3" y="59" width="197" height="28"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="GPS_autos_info_location_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JVx-8X-Wv9">
+                            <rect key="frame" x="7" y="6" width="10" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在获取位置..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brm-4h-Izx">
+                            <rect key="frame" x="24" y="0.0" width="166" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.97254901960784312" green="0.68627450980392157" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="brm-4h-Izx" firstAttribute="leading" secondItem="JVx-8X-Wv9" secondAttribute="trailing" constant="7" id="9rD-HS-dAZ"/>
+                        <constraint firstAttribute="trailing" secondItem="brm-4h-Izx" secondAttribute="trailing" constant="7" id="HQC-bc-3Ix"/>
+                        <constraint firstItem="brm-4h-Izx" firstAttribute="top" secondItem="gRk-c0-TPu" secondAttribute="top" id="TcQ-QC-w7U"/>
+                        <constraint firstItem="JVx-8X-Wv9" firstAttribute="centerY" secondItem="gRk-c0-TPu" secondAttribute="centerY" id="XEq-mh-zyh"/>
+                        <constraint firstAttribute="bottom" secondItem="brm-4h-Izx" secondAttribute="bottom" id="jcP-4M-7iz"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JVx-8X-Wv9" secondAttribute="bottom" id="mBO-Iq-Add"/>
+                        <constraint firstItem="JVx-8X-Wv9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gRk-c0-TPu" secondAttribute="top" id="quF-3C-hDV"/>
+                        <constraint firstItem="JVx-8X-Wv9" firstAttribute="leading" secondItem="gRk-c0-TPu" secondAttribute="leading" constant="7" id="wga-22-ylK"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-C3-vte">
+                    <rect key="frame" x="81.5" y="103" width="39" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AwF-C3-vte" secondAttribute="height" id="XdS-BR-8wW"/>
+                        <constraint firstAttribute="height" constant="39" id="jdA-dc-2Z5"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AwF-C3-vte" firstAttribute="top" secondItem="gRk-c0-TPu" secondAttribute="bottom" constant="16" id="16v-ck-wzB"/>
+                <constraint firstItem="cxF-PT-2FM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="2qB-Fb-LTE"/>
+                <constraint firstItem="Ug3-8J-2o6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="2r3-4V-lvZ"/>
+                <constraint firstItem="gRk-c0-TPu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="3ul-RW-OeW"/>
+                <constraint firstAttribute="bottom" secondItem="AwF-C3-vte" secondAttribute="bottom" id="8eD-92-0Ch"/>
+                <constraint firstItem="cxF-PT-2FM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-6" id="P51-Bn-vtz"/>
+                <constraint firstItem="cxF-PT-2FM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="QeZ-zO-oIJ"/>
+                <constraint firstAttribute="trailing" secondItem="Ug3-8J-2o6" secondAttribute="trailing" constant="3" id="Sgw-MJ-9h8"/>
+                <constraint firstItem="Ug3-8J-2o6" firstAttribute="top" secondItem="cxF-PT-2FM" secondAttribute="bottom" id="ZhE-xM-TOf"/>
+                <constraint firstItem="AwF-C3-vte" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zmc-ZF-rJ9"/>
+                <constraint firstAttribute="trailing" secondItem="cxF-PT-2FM" secondAttribute="trailing" constant="3" id="e1r-yG-aT5"/>
+                <constraint firstAttribute="trailing" secondItem="gRk-c0-TPu" secondAttribute="trailing" constant="3" id="jTn-xT-xJm"/>
+                <constraint firstItem="gRk-c0-TPu" firstAttribute="top" secondItem="Ug3-8J-2o6" secondAttribute="bottom" id="quL-5a-p0Y"/>
+                <constraint firstItem="gRk-c0-TPu" firstAttribute="height" secondItem="Ug3-8J-2o6" secondAttribute="height" id="t5t-pi-kZB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="GSMSignalLabel" destination="lMP-o4-tNs" id="MqP-jb-7DC"/>
+                <outlet property="addressLabel" destination="brm-4h-Izx" id="eFU-aa-RSQ"/>
+                <outlet property="carImageView" destination="AwF-C3-vte" id="eB9-C9-fBZ"/>
+                <outlet property="dateTimeLabel" destination="nQC-LV-UgN" id="e6u-Uh-EaE"/>
+                <outlet property="milesLabel" destination="kb4-Au-HML" id="wUL-K5-Z5J"/>
+            </connections>
+            <point key="canvasLocation" x="238.5" y="250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GPS_autos_info_GSM_icon.png" width="24" height="8"/>
+        <image name="GPS_autos_info_location_icon.png" width="10" height="16"/>
+        <image name="GPS_autos_info_speed_icon.png" width="19" height="13"/>
+        <image name="GPS_autos_info_time_icon.png" width="13" height="13"/>
+    </resources>
+</document>

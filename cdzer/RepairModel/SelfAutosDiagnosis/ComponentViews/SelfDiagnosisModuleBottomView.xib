@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelfDiagnosisModuleVC">
+            <connections>
+                <outlet property="tableFooterView" destination="UmV-I3-3jc" id="otJ-eW-p2T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmV-I3-3jc" customClass="SelfDiagnosisModuleBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <subviews>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI8-xY-Jte">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="sad_hint_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vma-1B-Tj7">
+                            <rect key="frame" x="12" y="17" width="29" height="9"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果您不知道您的车辆故障所处的部位，您可以直接选择它：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziQ-a5-MkM">
+                            <rect key="frame" x="62" y="10" width="246" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Vma-1B-Tj7" firstAttribute="centerY" secondItem="bI8-xY-Jte" secondAttribute="centerY" id="1Pa-Ik-dCH"/>
+                        <constraint firstItem="Vma-1B-Tj7" firstAttribute="leading" secondItem="bI8-xY-Jte" secondAttribute="leading" constant="12" id="H6P-ZE-XFh"/>
+                        <constraint firstAttribute="trailing" secondItem="ziQ-a5-MkM" secondAttribute="trailing" constant="12" id="IEK-bw-m29"/>
+                        <constraint firstItem="ziQ-a5-MkM" firstAttribute="top" secondItem="bI8-xY-Jte" secondAttribute="top" constant="10" id="KBE-lv-y5Z"/>
+                        <constraint firstAttribute="bottom" secondItem="ziQ-a5-MkM" secondAttribute="bottom" constant="10" id="XvS-Es-mJj"/>
+                        <constraint firstItem="ziQ-a5-MkM" firstAttribute="leading" secondItem="Vma-1B-Tj7" secondAttribute="trailing" constant="21" id="ifb-cz-8iG"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Im4-4y-nT6">
+                    <rect key="frame" x="0.0" y="44" width="320" height="188"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="188" id="mdo-Ka-cOo"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gQW-SV-yuR">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="UmV-I3-3jc" id="hnH-85-Q95"/>
+                        <outlet property="delegate" destination="UmV-I3-3jc" id="bpP-e3-sig"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Im4-4y-nT6" firstAttribute="top" secondItem="bI8-xY-Jte" secondAttribute="bottom" id="3t7-31-VDO"/>
+                <constraint firstAttribute="trailing" secondItem="bI8-xY-Jte" secondAttribute="trailing" id="Bdw-sX-itR"/>
+                <constraint firstAttribute="bottom" secondItem="Im4-4y-nT6" secondAttribute="bottom" constant="13" id="C1J-A6-HTD"/>
+                <constraint firstAttribute="trailing" secondItem="Im4-4y-nT6" secondAttribute="trailing" id="SFe-LS-b4s"/>
+                <constraint firstItem="bI8-xY-Jte" firstAttribute="leading" secondItem="UmV-I3-3jc" secondAttribute="leading" id="TPd-21-xnE"/>
+                <constraint firstItem="bI8-xY-Jte" firstAttribute="top" secondItem="UmV-I3-3jc" secondAttribute="top" id="WsJ-5r-7XR"/>
+                <constraint firstItem="Im4-4y-nT6" firstAttribute="leading" secondItem="UmV-I3-3jc" secondAttribute="leading" id="deL-TT-doz"/>
+                <constraint firstItem="bI8-xY-Jte" firstAttribute="top" secondItem="UmV-I3-3jc" secondAttribute="top" id="eU4-wK-XA2"/>
+                <constraint firstItem="bI8-xY-Jte" firstAttribute="leading" secondItem="UmV-I3-3jc" secondAttribute="leading" id="ez7-1d-eJj"/>
+                <constraint firstAttribute="height" constant="245" id="px8-uR-YPd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="Im4-4y-nT6" id="ESN-PL-H14"/>
+                <outlet property="heightConstraint" destination="px8-uR-YPd" id="zee-a9-j0l"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="-110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sad_hint_icon.png" width="29" height="9"/>
+    </resources>
+</document>

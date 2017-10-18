@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopMechanicSearchListVC">
+            <connections>
+                <outlet property="shopSeachButton" destination="Myx-Eh-OoB" id="gdY-Yu-wCD"/>
+                <outlet property="tableView" destination="Ef5-gZ-pKd" id="23j-Xv-rH9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ef5-gZ-pKd">
+                    <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xbB-cL-spd"/>
+                        <outlet property="delegate" destination="-1" id="fe0-7n-Exi"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="Zlc-yt-x1T"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="GRj-rw-L8Y"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-Eh-OoB">
+                    <rect key="frame" x="303" y="485.5" width="60" height="59.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Myx-Eh-OoB" secondAttribute="height" multiplier="1:1" id="Uzg-Ae-ncT"/>
+                    </constraints>
+                    <state key="normal" image="smsl_shop_list_icon.png"/>
+                    <connections>
+                        <action selector="pushBackShopSearchListVC" destination="-1" eventType="touchUpInside" id="oCw-Pt-gc7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ef5-gZ-pKd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="20w-XN-xHM"/>
+                <constraint firstItem="Myx-Eh-OoB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.15942" id="6o8-uH-EN7"/>
+                <constraint firstItem="Myx-Eh-OoB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.54529" id="PBk-Et-7yo"/>
+                <constraint firstAttribute="bottom" secondItem="Ef5-gZ-pKd" secondAttribute="bottom" id="c2Y-24-Vn9"/>
+                <constraint firstAttribute="trailing" secondItem="Myx-Eh-OoB" secondAttribute="trailing" constant="12" id="gzz-dg-PA6"/>
+                <constraint firstAttribute="trailing" secondItem="Ef5-gZ-pKd" secondAttribute="trailing" id="k19-lT-ehI"/>
+                <constraint firstItem="Ef5-gZ-pKd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="42" id="lFx-VV-doR"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="smsl_shop_list_icon.png" width="66" height="66"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

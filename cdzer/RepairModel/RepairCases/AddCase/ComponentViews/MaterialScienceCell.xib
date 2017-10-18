@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MaterialScienceCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="32.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入配件名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIV-gb-K01">
+                        <rect key="frame" x="13" y="1" width="130" height="30"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="yGC-v2-za9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="NAU-ub-8wC"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-Ks-FTz">
+                        <rect key="frame" x="159" y="1" width="73" height="30"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="KUT-ls-b51"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rg-4W-PvB">
+                        <rect key="frame" x="248" y="1" width="90" height="30"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="VrL-01-pad"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NZ-Gs-0bR">
+                        <rect key="frame" x="354" y="1" width="44" height="30"/>
+                        <state key="normal" image="delete.png"/>
+                        <connections>
+                            <action selector="deleteRowAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aca-59-p0T"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fd8-Ks-FTz" firstAttribute="centerY" secondItem="6rg-4W-PvB" secondAttribute="centerY" id="2LQ-Ri-Yne"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.376812" id="2Y8-I5-Fsl"/>
+                    <constraint firstItem="fd8-Ks-FTz" firstAttribute="width" secondItem="6rg-4W-PvB" secondAttribute="width" multiplier="0.811111" id="3Qe-YW-ljz"/>
+                    <constraint firstAttribute="bottom" secondItem="6rg-4W-PvB" secondAttribute="bottom" constant="1" id="BTx-2V-5GV"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="height" secondItem="fd8-Ks-FTz" secondAttribute="height" id="GSU-Jc-aXn"/>
+                    <constraint firstItem="fd8-Ks-FTz" firstAttribute="height" secondItem="6rg-4W-PvB" secondAttribute="height" id="NSc-dT-3OF"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Pfe-Vt-Fv3"/>
+                    <constraint firstItem="6rg-4W-PvB" firstAttribute="centerY" secondItem="5NZ-Gs-0bR" secondAttribute="centerY" id="SDJ-SL-k5O"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="width" secondItem="fd8-Ks-FTz" secondAttribute="width" multiplier="1.78082" id="Tsd-ru-FeC"/>
+                    <constraint firstItem="6rg-4W-PvB" firstAttribute="width" secondItem="5NZ-Gs-0bR" secondAttribute="width" multiplier="2.04545" id="UBw-c5-P8l"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="Ze6-vV-GkP"/>
+                    <constraint firstAttribute="bottom" secondItem="lIV-gb-K01" secondAttribute="bottom" constant="1" id="czf-zY-zIt"/>
+                    <constraint firstItem="5NZ-Gs-0bR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="d8z-kx-VuP"/>
+                    <constraint firstItem="5NZ-Gs-0bR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.81643" id="eFi-To-MuD"/>
+                    <constraint firstAttribute="bottom" secondItem="fd8-Ks-FTz" secondAttribute="bottom" constant="1" id="nZH-ya-oD9"/>
+                    <constraint firstItem="lIV-gb-K01" firstAttribute="centerY" secondItem="fd8-Ks-FTz" secondAttribute="centerY" id="req-Zh-BAO"/>
+                    <constraint firstItem="fd8-Ks-FTz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.944444" id="yza-VW-ngy"/>
+                    <constraint firstItem="6rg-4W-PvB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.41546" id="zBb-tM-N70"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="numberTF" destination="fd8-Ks-FTz" id="8hp-Qi-Bax"/>
+                <outlet property="partsTF" destination="lIV-gb-K01" id="jNm-wr-iqM"/>
+                <outlet property="unitPriceTF" destination="6rg-4W-PvB" id="Ftg-sa-Uh1"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="315.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete.png" width="11" height="11"/>
+    </resources>
+</document>

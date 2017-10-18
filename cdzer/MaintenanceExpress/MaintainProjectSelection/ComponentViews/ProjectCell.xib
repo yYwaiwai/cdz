@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProjectCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="gte-9y-GJ2">
+                        <rect key="frame" x="12" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="KZv-BY-RyU"/>
+                            <constraint firstAttribute="width" secondItem="gte-9y-GJ2" secondAttribute="height" multiplier="1:1" id="fbx-id-g6i"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更换手动变速邮箱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-SQ-8ox">
+                        <rect key="frame" x="41" y="13" width="114.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="notClick.png" highlightedImage="alreadyClick.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sjs-tw-gKc">
+                        <rect key="frame" x="290" y="13" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Sjs-tw-gKc" secondAttribute="height" multiplier="1:1" id="Z7L-np-j6f"/>
+                            <constraint firstAttribute="width" constant="17" id="xH7-pO-R7A"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqp-4T-6nS">
+                        <rect key="frame" x="41" y="0.0" width="114.5" height="43.5"/>
+                        <connections>
+                            <action selector="buttonAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uza-7D-K2L"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gte-9y-GJ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="A03-Pa-y0X"/>
+                    <constraint firstItem="gte-9y-GJ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="DkQ-qn-Kmq"/>
+                    <constraint firstItem="ccG-SQ-8ox" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Ezo-hh-GcO"/>
+                    <constraint firstItem="ccG-SQ-8ox" firstAttribute="leading" secondItem="gte-9y-GJ2" secondAttribute="trailing" constant="9" id="FdF-Js-gCl"/>
+                    <constraint firstItem="lqp-4T-6nS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hzy-Yp-QOq"/>
+                    <constraint firstAttribute="bottom" secondItem="Sjs-tw-gKc" secondAttribute="bottom" constant="13.5" id="JHH-RE-5Km"/>
+                    <constraint firstAttribute="bottom" secondItem="gte-9y-GJ2" secondAttribute="bottom" constant="11.5" id="XQG-xJ-2He"/>
+                    <constraint firstAttribute="bottom" secondItem="ccG-SQ-8ox" secondAttribute="bottom" constant="13.5" id="deJ-xY-ays"/>
+                    <constraint firstAttribute="trailing" secondItem="Sjs-tw-gKc" secondAttribute="trailing" constant="13" id="e0S-SA-2h4"/>
+                    <constraint firstItem="Sjs-tw-gKc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ccG-SQ-8ox" secondAttribute="trailing" constant="18" id="gLL-WE-fBB"/>
+                    <constraint firstItem="lqp-4T-6nS" firstAttribute="trailing" secondItem="ccG-SQ-8ox" secondAttribute="trailing" id="hE1-p7-yTJ"/>
+                    <constraint firstItem="Sjs-tw-gKc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="kBC-Pw-QfB"/>
+                    <constraint firstItem="lqp-4T-6nS" firstAttribute="leading" secondItem="ccG-SQ-8ox" secondAttribute="leading" id="kbN-fu-Mhl"/>
+                    <constraint firstAttribute="bottom" secondItem="lqp-4T-6nS" secondAttribute="bottom" id="noO-5m-e0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkMarkIV" destination="Sjs-tw-gKc" id="LXN-jO-imd"/>
+                <outlet property="titleImageView" destination="gte-9y-GJ2" id="il2-83-dzH"/>
+                <outlet property="titleLabel" destination="ccG-SQ-8ox" id="H3P-GQ-4gk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="alreadyClick.png" width="16" height="16"/>
+        <image name="notClick.png" width="16" height="16"/>
+    </resources>
+</document>

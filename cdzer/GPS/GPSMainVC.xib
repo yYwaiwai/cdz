@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSMainVC">
+            <connections>
+                <outlet property="lockStatusHitsLabel" destination="T47-M8-6Tr" id="rSw-At-dv6"/>
+                <outlet property="lockStatusLabel" destination="MLQ-tC-m8q" id="Mx4-KZ-08m"/>
+                <outlet property="lockedImageView" destination="2jF-zo-tdQ" id="pPP-Vq-pYI"/>
+                <outlet property="unlockedImageView" destination="wBF-Tc-tad" id="Gcr-U3-asp"/>
+                <outlet property="view" destination="Owl-Mk-FW6" id="d0B-br-eRV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Owl-Mk-FW6">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ExE-iS-Xl0">
+                    <rect key="frame" x="0.0" y="130" width="414" height="550"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_menu_bkg_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybJ-JJ-5Bv">
+                            <rect key="frame" x="0.0" y="51" width="283" height="448"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ybJ-JJ-5Bv" secondAttribute="height" multiplier="283:448" id="NED-Mi-pAn"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rP-0H-WM6" customClass="UIControl">
+                            <rect key="frame" x="36" y="22" width="139" height="51"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_autos_location_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-oS-6ab">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="EKB-oS-6ab" secondAttribute="height" multiplier="1:1" id="uQ1-Cs-DFS"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的车辆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M12-Zj-jev">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="EKB-oS-6ab" firstAttribute="top" secondItem="8rP-0H-WM6" secondAttribute="top" id="0B6-Ro-roY"/>
+                                <constraint firstItem="EKB-oS-6ab" firstAttribute="leading" secondItem="8rP-0H-WM6" secondAttribute="leading" id="7b0-6c-vVX"/>
+                                <constraint firstAttribute="bottom" secondItem="M12-Zj-jev" secondAttribute="bottom" id="B3t-KW-Tbc"/>
+                                <constraint firstItem="M12-Zj-jev" firstAttribute="leading" secondItem="EKB-oS-6ab" secondAttribute="trailing" constant="22" id="HSu-qt-2E9"/>
+                                <constraint firstItem="M12-Zj-jev" firstAttribute="top" secondItem="8rP-0H-WM6" secondAttribute="top" id="cH8-Il-OTT"/>
+                                <constraint firstAttribute="bottom" secondItem="EKB-oS-6ab" secondAttribute="bottom" id="dIA-Bm-zYD"/>
+                                <constraint firstAttribute="trailing" secondItem="M12-Zj-jev" secondAttribute="trailing" constant="6" id="hjl-ya-JTo"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToMyAutoLocationVC" destination="-1" eventType="touchUpInside" id="QBD-2h-Cfr"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4F-YS-iLm" customClass="UIControl">
+                            <rect key="frame" x="176" y="70" width="139" height="51"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_message_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-Pm-9Uu">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ecx-Pm-9Uu" secondAttribute="height" multiplier="1:1" id="xkW-FN-LIL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgS-WI-PC5">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="sgS-WI-PC5" firstAttribute="leading" secondItem="ecx-Pm-9Uu" secondAttribute="trailing" constant="22" id="7Em-ng-6OD"/>
+                                <constraint firstItem="ecx-Pm-9Uu" firstAttribute="top" secondItem="l4F-YS-iLm" secondAttribute="top" id="GyK-f7-tY5"/>
+                                <constraint firstItem="ecx-Pm-9Uu" firstAttribute="leading" secondItem="l4F-YS-iLm" secondAttribute="leading" id="VZW-du-Tc7"/>
+                                <constraint firstItem="sgS-WI-PC5" firstAttribute="top" secondItem="l4F-YS-iLm" secondAttribute="top" id="W71-u6-3n6"/>
+                                <constraint firstAttribute="bottom" secondItem="sgS-WI-PC5" secondAttribute="bottom" id="e52-uF-kO9"/>
+                                <constraint firstAttribute="trailing" secondItem="sgS-WI-PC5" secondAttribute="trailing" constant="6" id="rHv-ib-T0k"/>
+                                <constraint firstAttribute="bottom" secondItem="ecx-Pm-9Uu" secondAttribute="bottom" id="vFy-O3-WxS"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToMessageAlertVC" destination="-1" eventType="touchUpInside" id="R63-3y-bxp"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIw-3A-mA8" customClass="UIControl">
+                            <rect key="frame" x="251" y="175" width="139" height="51"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行车记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELf-YD-Utd">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_driving_record_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xwr-tV-RAe">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Xwr-tV-RAe" secondAttribute="height" multiplier="1:1" id="czR-eC-jgW"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ELf-YD-Utd" firstAttribute="top" secondItem="bIw-3A-mA8" secondAttribute="top" id="JSf-0A-Ehh"/>
+                                <constraint firstItem="ELf-YD-Utd" firstAttribute="leading" secondItem="Xwr-tV-RAe" secondAttribute="trailing" constant="22" id="OzA-UN-Sjl"/>
+                                <constraint firstAttribute="bottom" secondItem="Xwr-tV-RAe" secondAttribute="bottom" id="bPE-56-gvd"/>
+                                <constraint firstAttribute="bottom" secondItem="ELf-YD-Utd" secondAttribute="bottom" id="bcz-Zw-OEf"/>
+                                <constraint firstAttribute="trailing" secondItem="ELf-YD-Utd" secondAttribute="trailing" constant="6" id="nRt-59-ptU"/>
+                                <constraint firstItem="Xwr-tV-RAe" firstAttribute="top" secondItem="bIw-3A-mA8" secondAttribute="top" id="qDh-dZ-Tro"/>
+                                <constraint firstItem="Xwr-tV-RAe" firstAttribute="leading" secondItem="bIw-3A-mA8" secondAttribute="leading" id="sbN-wP-sY1"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToAutosDrivingRecordVC" destination="-1" eventType="touchUpInside" id="cuw-vR-gHI"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5g-gO-lRL" customClass="UIControl">
+                            <rect key="frame" x="251" y="312" width="139" height="51"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_setting_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="CuZ-sE-BN3">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CuZ-sE-BN3" secondAttribute="height" multiplier="1:1" id="6ge-4b-n7Z"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEx-ap-y7W">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="rEx-ap-y7W" secondAttribute="bottom" id="0GK-ef-7cJ"/>
+                                <constraint firstItem="rEx-ap-y7W" firstAttribute="leading" secondItem="CuZ-sE-BN3" secondAttribute="trailing" constant="22" id="HBF-B1-ziM"/>
+                                <constraint firstAttribute="bottom" secondItem="CuZ-sE-BN3" secondAttribute="bottom" id="LXX-RY-8lf"/>
+                                <constraint firstItem="rEx-ap-y7W" firstAttribute="top" secondItem="A5g-gO-lRL" secondAttribute="top" id="Tii-e2-j6c"/>
+                                <constraint firstItem="CuZ-sE-BN3" firstAttribute="leading" secondItem="A5g-gO-lRL" secondAttribute="leading" id="gM9-T7-OV6"/>
+                                <constraint firstAttribute="trailing" secondItem="rEx-ap-y7W" secondAttribute="trailing" constant="6" id="srN-pn-gWB"/>
+                                <constraint firstItem="CuZ-sE-BN3" firstAttribute="top" secondItem="A5g-gO-lRL" secondAttribute="top" id="z7F-0T-uCb"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToGPSAlertSettingVC" destination="-1" eventType="touchUpInside" id="mJu-hJ-OTg"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyY-1R-F8I" customClass="UIControl">
+                            <rect key="frame" x="176" y="430" width="139" height="51"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实时车况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyb-jd-wy2">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_real_time_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="auI-Cd-CHL">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="auI-Cd-CHL" secondAttribute="height" multiplier="1:1" id="ywy-pa-uhX"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="auI-Cd-CHL" firstAttribute="top" secondItem="PyY-1R-F8I" secondAttribute="top" id="24Y-LN-TGg"/>
+                                <constraint firstAttribute="bottom" secondItem="auI-Cd-CHL" secondAttribute="bottom" id="2sR-Oz-tTd"/>
+                                <constraint firstItem="fyb-jd-wy2" firstAttribute="top" secondItem="PyY-1R-F8I" secondAttribute="top" id="5mJ-qT-6yk"/>
+                                <constraint firstAttribute="trailing" secondItem="fyb-jd-wy2" secondAttribute="trailing" constant="6" id="V9t-JE-i3J"/>
+                                <constraint firstItem="auI-Cd-CHL" firstAttribute="leading" secondItem="PyY-1R-F8I" secondAttribute="leading" id="hxr-0g-MeR"/>
+                                <constraint firstAttribute="bottom" secondItem="fyb-jd-wy2" secondAttribute="bottom" id="iFq-kU-OQn"/>
+                                <constraint firstItem="fyb-jd-wy2" firstAttribute="leading" secondItem="auI-Cd-CHL" secondAttribute="trailing" constant="22" id="iKP-2d-ZpD"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToRealtimeAutoInfoVC" destination="-1" eventType="touchUpInside" id="8Ir-jC-q3R"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sic-lK-Gq4" customClass="UIControl">
+                            <rect key="frame" x="36" y="474" width="139" height="51"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_diagnosis_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-rz-AWL">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Wjh-rz-AWL" secondAttribute="height" multiplier="1:1" id="hfX-7P-ugR"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="故障诊断" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-g2-Bv4">
+                                    <rect key="frame" x="73" y="0.0" width="60" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Wjh-rz-AWL" firstAttribute="leading" secondItem="sic-lK-Gq4" secondAttribute="leading" id="4L0-qn-RBJ"/>
+                                <constraint firstAttribute="bottom" secondItem="w0J-g2-Bv4" secondAttribute="bottom" id="6FV-Je-VXU"/>
+                                <constraint firstItem="w0J-g2-Bv4" firstAttribute="leading" secondItem="Wjh-rz-AWL" secondAttribute="trailing" constant="22" id="7pM-Uk-2nM"/>
+                                <constraint firstItem="w0J-g2-Bv4" firstAttribute="top" secondItem="sic-lK-Gq4" secondAttribute="top" id="BQz-Cf-CPe"/>
+                                <constraint firstAttribute="trailing" secondItem="w0J-g2-Bv4" secondAttribute="trailing" constant="6" id="I2J-hB-FaY"/>
+                                <constraint firstItem="Wjh-rz-AWL" firstAttribute="top" secondItem="sic-lK-Gq4" secondAttribute="top" id="WaR-Ak-eCa"/>
+                                <constraint firstAttribute="bottom" secondItem="Wjh-rz-AWL" secondAttribute="bottom" id="h9H-F9-cz3"/>
+                            </constraints>
+                            <connections>
+                                <action selector="pushToOBDDiagnosisVC" destination="-1" eventType="touchUpInside" id="zju-EO-YAS"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-eF-MI6" customClass="UIControl">
+                            <rect key="frame" x="25" y="183" width="108" height="183"/>
+                            <subviews>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_lock_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2jF-zo-tdQ">
+                                    <rect key="frame" x="18" y="16" width="71" height="86"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="2jF-zo-tdQ" secondAttribute="height" multiplier="71:86" id="YhP-hL-VBE"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPS_mv_unlock_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wBF-Tc-tad">
+                                    <rect key="frame" x="18" y="0.0" width="71" height="102"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="wBF-Tc-tad" secondAttribute="height" multiplier="71:102" id="hqN-2z-1L0"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未设防" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-tC-m8q">
+                                    <rect key="frame" x="0.0" y="113" width="108" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击开启设防" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="T47-M8-6Tr">
+                                    <rect key="frame" x="0.0" y="161" width="108" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="2jF-zo-tdQ" firstAttribute="centerX" secondItem="wBF-Tc-tad" secondAttribute="centerX" id="14X-MN-hu5"/>
+                                <constraint firstItem="wBF-Tc-tad" firstAttribute="centerX" secondItem="iOV-eF-MI6" secondAttribute="centerX" id="5kF-G1-olm"/>
+                                <constraint firstItem="MLQ-tC-m8q" firstAttribute="top" secondItem="wBF-Tc-tad" secondAttribute="bottom" constant="11" id="HVp-xf-J2g"/>
+                                <constraint firstItem="T47-M8-6Tr" firstAttribute="top" relation="lessThanOrEqual" secondItem="MLQ-tC-m8q" secondAttribute="bottom" constant="30" id="MJz-bc-9Le"/>
+                                <constraint firstItem="wBF-Tc-tad" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iOV-eF-MI6" secondAttribute="leading" id="R6U-Yl-NZR"/>
+                                <constraint firstItem="T47-M8-6Tr" firstAttribute="top" secondItem="MLQ-tC-m8q" secondAttribute="bottom" priority="999" constant="30" id="SeZ-uZ-Krd"/>
+                                <constraint firstItem="MLQ-tC-m8q" firstAttribute="leading" secondItem="iOV-eF-MI6" secondAttribute="leading" id="Vwp-Dg-sBy"/>
+                                <constraint firstAttribute="trailing" secondItem="T47-M8-6Tr" secondAttribute="trailing" id="WT1-1G-4pl"/>
+                                <constraint firstAttribute="bottom" secondItem="T47-M8-6Tr" secondAttribute="bottom" id="apE-tk-LbI"/>
+                                <constraint firstItem="2jF-zo-tdQ" firstAttribute="bottom" secondItem="wBF-Tc-tad" secondAttribute="bottom" id="ces-Sz-TxU"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wBF-Tc-tad" secondAttribute="trailing" id="fZx-Pr-TxW"/>
+                                <constraint firstItem="2jF-zo-tdQ" firstAttribute="width" secondItem="wBF-Tc-tad" secondAttribute="width" id="h4P-yX-yif"/>
+                                <constraint firstItem="wBF-Tc-tad" firstAttribute="top" secondItem="iOV-eF-MI6" secondAttribute="top" id="l3z-eL-ce3"/>
+                                <constraint firstAttribute="trailing" secondItem="MLQ-tC-m8q" secondAttribute="trailing" id="lCm-IH-aKL"/>
+                                <constraint firstItem="T47-M8-6Tr" firstAttribute="leading" secondItem="iOV-eF-MI6" secondAttribute="leading" id="nTn-gG-r1J"/>
+                            </constraints>
+                            <connections>
+                                <action selector="changeFastPreventionProtectStatus" destination="-1" eventType="touchUpInside" id="B8g-F3-7sY"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="EKB-oS-6ab" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="2VJ-Va-56D"/>
+                        <constraint firstItem="ybJ-JJ-5Bv" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.683575" id="2gF-HZ-x2I"/>
+                        <constraint firstItem="iOV-eF-MI6" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" id="6DF-e2-tZL"/>
+                        <constraint firstItem="iOV-eF-MI6" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="0.381643" id="BAo-Pv-RdS"/>
+                        <constraint firstItem="ybJ-JJ-5Bv" firstAttribute="leading" secondItem="ExE-iS-Xl0" secondAttribute="leading" id="BYP-rh-4FV"/>
+                        <constraint firstItem="sic-lK-Gq4" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="1.81636" id="FBV-Yy-OyZ"/>
+                        <constraint firstItem="PyY-1R-F8I" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="1.65636" id="FLd-fr-mlz"/>
+                        <constraint firstItem="l4F-YS-iLm" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="1.18599" id="GkQ-oW-8U8"/>
+                        <constraint firstItem="CuZ-sE-BN3" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="Hnv-jS-tkg"/>
+                        <constraint firstItem="Xwr-tV-RAe" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="Jp1-iJ-kDq"/>
+                        <constraint firstItem="bIw-3A-mA8" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="1.54831" id="Qx5-wO-HwE"/>
+                        <constraint firstItem="sic-lK-Gq4" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="0.509662" id="RLs-1P-Kv0"/>
+                        <constraint firstItem="wBF-Tc-tad" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.171498" id="TIW-K5-QdP"/>
+                        <constraint firstItem="ecx-Pm-9Uu" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="VrO-eU-JhE"/>
+                        <constraint firstItem="8rP-0H-WM6" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="0.172727" id="Vru-yT-07J"/>
+                        <constraint firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="height" multiplier="207:275" id="Xcc-LY-3qh"/>
+                        <constraint firstItem="l4F-YS-iLm" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="0.347273" id="abo-jY-QGy"/>
+                        <constraint firstItem="A5g-gO-lRL" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="1.54831" id="dUN-UA-5r9"/>
+                        <constraint firstItem="8rP-0H-WM6" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="0.509662" id="fOj-rT-uMn"/>
+                        <constraint firstItem="bIw-3A-mA8" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="0.729091" id="gcg-cg-P7H"/>
+                        <constraint firstItem="A5g-gO-lRL" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" multiplier="1.22727" id="hZb-nR-fV6"/>
+                        <constraint firstItem="PyY-1R-F8I" firstAttribute="centerX" secondItem="ExE-iS-Xl0" secondAttribute="centerX" multiplier="1.18599" id="k7J-c5-uIw"/>
+                        <constraint firstItem="Wjh-rz-AWL" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="lBe-qs-NrR"/>
+                        <constraint firstItem="auI-Cd-CHL" firstAttribute="width" secondItem="ExE-iS-Xl0" secondAttribute="width" multiplier="0.123188" id="lvp-CK-nd6"/>
+                        <constraint firstItem="ybJ-JJ-5Bv" firstAttribute="centerY" secondItem="ExE-iS-Xl0" secondAttribute="centerY" id="ylE-Yf-D6o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ExE-iS-Xl0" firstAttribute="centerY" secondItem="Owl-Mk-FW6" secondAttribute="centerY" multiplier="1.1" id="7bv-zY-hJU"/>
+                <constraint firstItem="ExE-iS-Xl0" firstAttribute="leading" secondItem="Owl-Mk-FW6" secondAttribute="leading" id="HHr-Rq-eQC"/>
+                <constraint firstAttribute="trailing" secondItem="ExE-iS-Xl0" secondAttribute="trailing" id="yIt-cH-ahg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="356" y="-68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GPS_menu_bkg_img.png" width="283" height="448"/>
+        <image name="GPS_mv_autos_location_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_diagnosis_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_driving_record_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_lock_icon.png" width="71" height="86"/>
+        <image name="GPS_mv_message_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_real_time_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_setting_icon.png" width="51" height="51"/>
+        <image name="GPS_mv_unlock_icon.png" width="71" height="102"/>
+    </resources>
+</document>

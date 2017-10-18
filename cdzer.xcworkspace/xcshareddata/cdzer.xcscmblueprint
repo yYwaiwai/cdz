@@ -1,0 +1,64 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++7E409D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++7E409D4" : {
+
+    },
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++4B6D7C1" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "CDZer%E4%B8%AA%E4%BA%BA%E7%89%88\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "CDZer%E4%B8%AA%E4%BA%BA%E7%89%88\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "CDZer%E4%B8%AA%E4%BA%BA%E7%89%88\/trunk"
+    },
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++5C66A2D" : {
+
+    },
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++F3088BE" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++7E409D4" : 9223372036854775807,
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++4B6D7C1" : 9223372036854775807,
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++5C66A2D" : 0,
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++CC89903" : 0,
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++F3088BE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA4EA742-D92D-4BCE-B6F4-A3496507A6F6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++7E409D4" : "%E4%B8%AA%E4%BA%BA%E7%89%881.3.9\/",
+    "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++4B6D7C1" : "1.3.9%20%E7%89%88%E6%9C%AC%E5%BC%80%E5%8F%91\/",
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++5C66A2D" : "%E4%B8%AA%E4%BA%BA%E7%89%881.3.9\/Frameworks\/gpx-parser-cocoa\/",
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++CC89903" : "1.3.9%20%E7%89%88%E6%9C%AC%E5%BC%80%E5%8F%91\/Frameworks\/gpx-parser-cocoa\/",
+    "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++F3088BE" : "%E4%B8%AA%E4%BA%BA%E7%89%881.3.9\/Frameworks\/gpx-parser-cocoa\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cdzer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cdzer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.2.243",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++4B6D7C1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.2.243",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3e44d2df-5692-47ce-88e6-a3b5a3f631d9++4045+++7E409D4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patricks\/gpx-parser-cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++5C66A2D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/patricks\/gpx-parser-cocoa.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++CC89903"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.2.243",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45B4AA2BE8FC4565C8F50BC5FF830C9CB8157F75+++F3088BE"
+    }
+  ]
+}

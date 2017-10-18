@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserMemberHistoryVC">
+            <connections>
+                <outlet property="tableView" destination="YBM-H6-xf0" id="xQ4-Xd-MgJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YBM-H6-xf0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pR5-a8-h1t"/>
+                        <outlet property="delegate" destination="-1" id="BG5-ET-G1o"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="Qhw-sp-m6P"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="d3s-ZH-15z"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YBM-H6-xf0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EhQ-wF-wcW"/>
+                <constraint firstAttribute="trailing" secondItem="YBM-H6-xf0" secondAttribute="trailing" id="aDp-ch-j2R"/>
+                <constraint firstItem="YBM-H6-xf0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ixF-SP-9ks"/>
+                <constraint firstAttribute="bottom" secondItem="YBM-H6-xf0" secondAttribute="bottom" id="qDd-NB-20a"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

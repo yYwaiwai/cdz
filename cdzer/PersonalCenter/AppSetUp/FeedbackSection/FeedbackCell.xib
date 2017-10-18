@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FeedbackCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="LUl-OL-Rpk">
+                        <rect key="frame" x="13" y="17" width="39" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LUl-OL-Rpk" secondAttribute="height" multiplier="39:40" id="kcX-3G-ren"/>
+                            <constraint firstAttribute="height" constant="40" id="rLc-Uj-Ozm"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="cdzerImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bo3-m1-onz">
+                        <rect key="frame" x="269" y="75" width="39" height="40"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfT-z8-jpu">
+                        <rect key="frame" x="71" y="17" width="75" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="U94-cj-luI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="useDhk.png" translatesAutoresizingMaskIntoConstraints="NO" id="MfG-5I-5LR">
+                        <rect key="frame" x="59" y="38" width="11" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Fp6-Nf-Bw2"/>
+                            <constraint firstAttribute="width" constant="11" id="aTq-U2-3GN"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-Eh-gnc">
+                        <rect key="frame" x="69" y="32" width="169" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="支付页面跳转不方便" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdm-DU-uV4">
+                                <rect key="frame" x="18" y="8" width="135" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.7803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tdm-DU-uV4" secondAttribute="trailing" constant="16" id="VfN-8c-gOY"/>
+                            <constraint firstItem="Tdm-DU-uV4" firstAttribute="leading" secondItem="fq7-Eh-gnc" secondAttribute="leading" constant="18" id="e3B-cx-WBw"/>
+                            <constraint firstItem="Tdm-DU-uV4" firstAttribute="top" secondItem="fq7-Eh-gnc" secondAttribute="top" constant="8" id="mCV-Dx-ZtR"/>
+                            <constraint firstAttribute="bottom" secondItem="Tdm-DU-uV4" secondAttribute="bottom" constant="8" id="vwU-Kf-8wA"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-RX-44a">
+                        <rect key="frame" x="81" y="81" width="170" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付页面跳转不方便边框吗" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEP-6P-Ijw">
+                                <rect key="frame" x="18" y="8" width="136" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.62745098040000002" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jEP-6P-Ijw" firstAttribute="leading" secondItem="hbj-RX-44a" secondAttribute="leading" constant="18" id="9iy-I1-nbe"/>
+                            <constraint firstItem="jEP-6P-Ijw" firstAttribute="top" secondItem="hbj-RX-44a" secondAttribute="top" constant="8" id="Lf7-Oj-JjI"/>
+                            <constraint firstAttribute="bottom" secondItem="jEP-6P-Ijw" secondAttribute="bottom" constant="8" id="a2w-4f-dMa"/>
+                            <constraint firstAttribute="trailing" secondItem="jEP-6P-Ijw" secondAttribute="trailing" constant="16" id="jsB-3I-71B"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="cdzDhk.png" translatesAutoresizingMaskIntoConstraints="NO" id="win-fx-Ivv">
+                        <rect key="frame" x="251" y="89" width="11" height="12"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hbj-RX-44a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="73" id="4s5-ST-wM4"/>
+                    <constraint firstItem="LUl-OL-Rpk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="9ey-hD-RHd"/>
+                    <constraint firstItem="MfG-5I-5LR" firstAttribute="top" secondItem="LUl-OL-Rpk" secondAttribute="top" constant="21" id="F04-JX-JON"/>
+                    <constraint firstItem="MfG-5I-5LR" firstAttribute="leading" secondItem="LUl-OL-Rpk" secondAttribute="trailing" constant="7" id="HDH-9a-s9M"/>
+                    <constraint firstItem="win-fx-Ivv" firstAttribute="leading" secondItem="hbj-RX-44a" secondAttribute="trailing" id="IDM-7q-OSB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fq7-Eh-gnc" secondAttribute="trailing" constant="74" id="N8B-3z-s7l"/>
+                    <constraint firstAttribute="trailing" secondItem="Bo3-m1-onz" secondAttribute="trailing" constant="12" id="acz-Id-C4s"/>
+                    <constraint firstItem="WfT-z8-jpu" firstAttribute="leading" secondItem="LUl-OL-Rpk" secondAttribute="trailing" constant="19" id="bZw-bp-bPd"/>
+                    <constraint firstItem="win-fx-Ivv" firstAttribute="centerY" secondItem="Bo3-m1-onz" secondAttribute="centerY" id="cBT-Ez-Hfv"/>
+                    <constraint firstItem="LUl-OL-Rpk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="cYH-j5-GFp"/>
+                    <constraint firstItem="fq7-Eh-gnc" firstAttribute="top" secondItem="WfT-z8-jpu" secondAttribute="bottom" constant="3" id="dmv-Ha-Kaq"/>
+                    <constraint firstItem="fq7-Eh-gnc" firstAttribute="leading" secondItem="MfG-5I-5LR" secondAttribute="trailing" constant="-1" id="eNq-fV-ypE"/>
+                    <constraint firstItem="Bo3-m1-onz" firstAttribute="leading" secondItem="win-fx-Ivv" secondAttribute="trailing" constant="7" id="hKZ-EN-JJs"/>
+                    <constraint firstItem="win-fx-Ivv" firstAttribute="leading" secondItem="hbj-RX-44a" secondAttribute="trailing" constant="1" id="hUo-wS-VBa"/>
+                    <constraint firstAttribute="bottom" secondItem="hbj-RX-44a" secondAttribute="bottom" constant="19" id="mZm-lz-udR"/>
+                    <constraint firstItem="Bo3-m1-onz" firstAttribute="top" secondItem="hbj-RX-44a" secondAttribute="top" constant="-6" id="n3a-o2-KkG"/>
+                    <constraint firstItem="win-fx-Ivv" firstAttribute="leading" secondItem="hbj-RX-44a" secondAttribute="trailing" id="oGF-YR-SQg"/>
+                    <constraint firstItem="WfT-z8-jpu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="pXY-nh-feU"/>
+                    <constraint firstItem="hbj-RX-44a" firstAttribute="top" secondItem="fq7-Eh-gnc" secondAttribute="bottom" constant="17" id="vEA-G2-8yf"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hUo-wS-VBa"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cdzerBgView" destination="hbj-RX-44a" id="idU-e6-V2I"/>
+                <outlet property="cdzerContentLabel" destination="jEP-6P-Ijw" id="ie3-K3-ruP"/>
+                <outlet property="userBgView" destination="fq7-Eh-gnc" id="icy-kp-bCr"/>
+                <outlet property="userContentLabel" destination="Tdm-DU-uV4" id="Ezo-86-nFA"/>
+                <outlet property="userHeadImage" destination="LUl-OL-Rpk" id="Oxv-sH-46B"/>
+                <outlet property="userTelephone" destination="WfT-z8-jpu" id="sey-WF-VBG"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cdzDhk.png" width="11" height="12"/>
+        <image name="cdzerImage.png" width="39" height="40"/>
+        <image name="useDhk.png" width="13" height="14"/>
+        <image name="userImage.png" width="39" height="40"/>
+    </resources>
+</document>

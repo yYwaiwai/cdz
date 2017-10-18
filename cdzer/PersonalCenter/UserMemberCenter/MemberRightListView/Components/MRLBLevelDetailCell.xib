@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="HKZ-Gx-TVV" customClass="MemberRightListBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HKZ-Gx-TVV" id="qET-TU-MxP">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="33.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pn5-jf-ETB">
+                        <rect key="frame" x="12" y="3" width="390" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pn5-jf-ETB" firstAttribute="top" secondItem="qET-TU-MxP" secondAttribute="top" constant="3" id="QBD-3a-kEY"/>
+                    <constraint firstAttribute="bottom" secondItem="pn5-jf-ETB" secondAttribute="bottom" constant="14" id="ZWX-YR-7WK"/>
+                    <constraint firstItem="pn5-jf-ETB" firstAttribute="leading" secondItem="qET-TU-MxP" secondAttribute="leading" constant="12" id="Zbg-re-ELT"/>
+                    <constraint firstAttribute="trailing" secondItem="pn5-jf-ETB" secondAttribute="trailing" constant="12" id="d3m-tj-RGB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="pn5-jf-ETB" id="wP1-yb-4AK"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="313"/>
+        </tableViewCell>
+    </objects>
+</document>

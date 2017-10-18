@@ -1,0 +1,513 @@
+/* 
+  Localization.strings
+  cdzer
+
+  Created by KEns0n on 2/7/15.
+  Copyright (c) 2015 CDZER. All rights reserved.
+*/
+
+// Common
+"loading" = "载入中.....";
+"locating" = "定位中";
+"ok" = "确定";
+"cancel" = "取消";
+"back" = "返回";
+"login" = "登录";
+"register" = "注册";
+"register_acccount" = "注册账号";
+"logout" = "注销";
+"submit" = "提交";
+"pass_forgot" = "找回密码";
+"password" = "密码";
+"confirm_password" = "确认新密码";
+"old_password" = "旧密码：";
+"new_password" = "新密码：";
+"confirm_new_password" = "确认新密码：";
+"carSelectRemind" = "请选择正确信息，便捷查找";
+"carSelectRemind2" = "没有已选车型，请点此选择！";
+"my_location" = "我的位置";
+"next_step" = "下一步";
+"search" = "查  询";
+"appointment" = "预约";
+"finish" = "完成";
+"appointment_now" = "立即预约";
+"service_select" = "选择服务项目";
+"star_with_integer" = "%@星";
+"type" = "类型";
+"quantity" = "数量：";
+"ata" = "实际到达时间：";
+"eta" = "预计到达时间：";
+"edit" = "编辑";
+"address" = "地址";
+"delete_all" = "删除所有";
+"delete" = "删除";
+"check_all" = "全选";
+"cancel_check_all" = "取消全选";
+"full_name" = "姓名";
+"clear" = "清除";
+"success" = "成功";
+"error" = "错误";
+"success_submit" = "提交成功";
+"success_update" = "更新成功";
+"success_delete" = "删除成功";
+"not_define" = "未设置";
+"male" = "男";
+"female" = "女";
+"no_more_option" = "--没有更多选择--";
+"alert_remind" = "温馨提示";
+"authenticate" = "认证";
+"all" = "全部";
+"no_limit" = "不限";
+"non_authenticated" = "未认证";
+"was_authenticated" = "已认证";
+"update_success" = "更改成功！";
+"clear_success" = "清除成功！";
+"input_city" = "输入城市名称";
+"change" = "修改";
+"valid_code" = "验证码";
+"" = "";
+
+// Message Alert List VC String
+"message_alert_vc" = "消息列表";
+
+// CommonTabBar String
+"home" = "首页";
+"news" = "资讯";
+"cs_hotline" = "客服";
+"personal_center" = "个人中心";
+
+// Main Page String
+
+"GPS-Appointment" = "预约GPS设备";
+
+"SBT-GPS" = "GPS服务";
+"SBST-GPS" = "实时车况 故障诊断 设防 定位";
+
+"SBT-Repair" = "我要维修";
+"SBST-Repair" = "保养／诊断 查找商家";
+"SBST-RepairB4" = "保养／诊断\n查找商家";
+
+
+"SBT-Management" = "车务管理";
+"SBST-Management" = "企业车务管理移动办公系统";
+
+"SBT-Parts" = "汽车配件";
+"SBT-UsedCars" = "二手车";
+"SBT-Violation" = "违章查询";
+"SBT-GPSAppointment" = "预约GPS设备";
+"SBT-Message" = "消息提醒";
+"SBT-CS" = "一键客服";
+
+// Repair Page String
+"iRepair" = "我要维修";
+"quick_maintenance" = "快捷保养";
+"self_diagnosis" = "自助诊断";
+"self_care" = "自助保养";
+"get_cases" = "获取案例";
+"repair_encyclopedia" = "维修百科";
+"appointment_service" = "预约服务项目";
+
+// Repair Shop String
+"RepairStore" = "查找商家";
+"store_address" = "请输入维修商地址";
+"store_name" = "关键字／维修商名称";
+"store_type" = "维修商类型";
+"direct_hits" = "您还可以直接点击以下保养服务项目：";
+"direct_btn_01" = "汽车保养";
+"direct_btn_02" = "汽车美容";
+"direct_btn_03" = "油漆";
+"direct_btn_04" = "玻璃贴膜";
+"direct_btn_05" = "装横改装";
+"direct_btn_06" = "车轮车毂";
+"direct_btn_07" = "服务施工";
+"store_detail" = "商家详情";
+
+// Shop Appointment VC String
+"select_service_4_appointment" = "选择预约服务项目";
+"apply_appointment" = "申请预约";
+"repair_items_select" = "维修项目";
+"maintenance_items_select" = "保养项目";
+"repair_items_selected" = "已选维修项目：";
+"maintenance_items_selected" = "已选保养项目：";
+"repair_select_remind" = "你还没选择维修项目！";
+"maintenance_select_remind" = "你还没选择保养项目！";
+"click_and_go" = "点击此处选择";
+"select_repair_service" = "维修项目选择";
+"select_maintenance_service" = "保养项目选择";
+"main_parts_category_title" = "部件总分类：";
+"sub_parts_category_title" = "部件二级分类与原因：";
+"no_main_category_data" = "没有部件总分类数据";
+"no_sub_category_data" = "没有部件二级分类数据";
+"send_appointment" = "预约提交中...";
+
+
+// Vehicle Selection VC String
+"select_cars" = "请选择车型";
+"selected_history" = "历史车型：";
+"personal_cars" = "个人已存车型：";
+"independent_select" = "自选车型：";
+"no_history_auto_data" = "没有已选的历史车型！";
+"user_auto_data_without_login" = "立即登录取得个人车型！";
+"no_user_auto_data" = "没有已设置的个人车型！";
+"auto_brand" = "汽车品牌";
+"auto_dealership" = "汽车商";
+"auto_series" = "汽车系列";
+"auto_model" = "汽车型号";
+"click_to_select" = "点此选择汽车";
+"click_to_continue_select" = "点此继续选择汽车";
+"please_select_auto_brand" = "--请选择汽车品牌--";
+"please_select_auto_dealership" = "--请选择汽车商--";
+"please_select_auto_series" = "--请选择汽车系列--";
+"please_select_auto_model" = "--请选择汽车型号--";
+"auto_data_error_1" = "Autos Brand Data Error";
+"auto_data_error_2" = "Autos Dealership Data Error";
+"auto_data_error_3" = "Autos Series Data Error";
+"auto_data_error_4" = "Autos Model Data Error";
+
+
+// Repair Store Search Result VC String
+"reputation" = "信誉度";
+"distance" = "距离";
+"complex_factor" = "综合筛选";
+"default_select" = "默认排序";
+"service_item" = "服务项目";
+"is_authenticate" = "是否认证";
+"all_city" = "全城";
+
+// Engineer List VC String
+"engineer_list" = "技师中心";
+"expertise_skills" = "技术专长：";
+"main_repair_brand" = "主修品牌：";
+"work_experience" = "工作经验：";
+
+// Comment VC String
+"write_comment" = "撰写评论";
+"service_comment" = "服务评论";
+
+// Maintance Service Selection VC String
+"normal_check" = "常规保养";
+"d_check" = "深度保养";
+"fuel_sys_check" = "燃油系统保养";
+"engine_int_check" = "发动机内部保养";
+"aircon_sys_check" = "空调系统保养";
+"gear_sys_check" = "变速箱系统保养";
+"coldwn_sys_check" = "冷却系统保养";
+
+"minor_repair" = "小保养";
+"major_repair" = "大保养";
+"replace_filter" = "更换\n空调滤清器";
+"replace_refrigerant" = "更换\n空调制冷剂";
+"replace_wiper" = "更换雨刮片";
+"replace_spark_plug" = "更换火花塞";
+"replace_battery" = "更换\n电瓶上门安装";
+"replace_power_steering_fluid" = "更换\n助力转向油";
+"replace_brake_fluid" = "更换刹车油";
+"replace_brake_lining" = "更换刹车片";
+"replace_brake_disk" = "更换刹车盘";
+"replace_tire" = "更换轮胎";
+"replace_shock_absorber" = "更换减震器";
+"replace_anti-freezing_fluid" = "更换\n房东冷却剂";
+"replace_timing_belt" = "更换\n正时皮带";
+"replace_headlight" = "更换\n大灯灯泡";
+"replace_automatic_transmission_fluid" = "更换\n自动变速箱油";
+"replace_auxiliary_belt" = "更换\n外部皮带";
+
+// Self Analyzation VC String
+"self_analyzation" = "自助诊断";
+"analyzation_result" = "诊断详情";
+"setp_flow_title" = "诊断流程：";
+"failure_type" = "故障类型：";
+"failure_appearance" = "故障现象：";
+"failure_type_struct" = "故障结构：";
+"failure_factor_analyze" = "故障原因分析：";
+"slove_problem" = "解决方案：";
+"component_replacement" = "更换配件：";
+
+"please_select_failure_titile_id_0" = "--请选择故障类型--";
+"please_select_failure_titile_id_1" = "--请选择故障现象--";
+"please_select_failure_titile_id_2" = "--请选择故障结构--";
+"please_select_failure_titile_id_3" = "--请选择故障原因分析--";
+"please_select_failure_titile_id_4" = "--请选择解决方案--";
+"please_select_failure_titile_id_5" = "--请选择更换配件--";
+
+// Repair Cases VC String
+"autos_category_title" = "汽车部件分类：";
+"autos_category_title" = "故障结构：";
+"cases_result" = "案例结果";
+
+// Self Repair VC String
+"self_repair" = "自助维修";
+"self_repair_result" = "保养诊断";
+"mile_alert_message" = "请输入里数！";
+"date_selection_alert_message" = "请选择日期！";
+//"alert_description" = "请你先设置保养相关数据，以保证软件给你提供更准确的保养提醒。";
+"alert_description" = "首先让我们了解你的爱车有什么保养需求，爱车在养不在修，记得及时保养。";
+"service_description" = "你还可以直接点击以下保养服务项目";
+"km_label_hints" = "请输入20万以内的里数";
+"mileage_txt_prefix" = "行驶里程：";
+"date_txt_prefix" = "购车日期：";
+"sr_data_remind" = "*本应用的保养数据和价格仅供参考！";
+"sr_analyze_remind" = "根据检测分析，请注意本次保养事项：";
+
+// Item Detail VC String
+"item_detail" = "配件信息";
+"item_suitable_for" = "当前商品适用于：\n";
+"item_non_suitable_for" = "当前商品不适用于：\n";
+"content_title" = "商品信息";
+"add_cart" = "加入购物车";
+"apply_gps" = "申请预约GPS";
+
+// Personal Center VC String
+"my_autos" = "我的车辆";
+"my_cart" = "我的购物车";
+"my_collection" = "我的收藏";
+"my_pirce_check" = "我的询价列表";
+"my_repair_management" = "我的维修管理";
+"my_insurance" = "我的保险";
+"my_credit" = "我的积分";
+"shipping_address" = "收货地址管理";
+"user_detail_hint" = "请完善车队长账号，获得更好的服务";
+"login_first" = "请登录帐号!\n以得到最佳用户体验！";
+"title_head_caption" = "你收藏了 ";
+"store_tail_caption" = " 个店铺";
+"product_tail_caption" = " 件商品";
+
+// My Autos Insurance VC String
+"my_insurance_list" = "我的保险列表";
+"my_insurance_appointment" = "预约保险";
+"my_insurance_detail" = "保险详情";
+
+// My Coupon VC String
+"my_coupon" = "我的优惠劵";
+"coupon" = "优惠劵";
+
+// My E-Repair VC String
+"my_eservice" = "我的E服务";
+"e_repair" = "E－代修";
+"e_inspect" = "E－代检";
+"e_insurance" = "E－代赔";
+
+// Parts Store VC String
+"auto_parts" = "汽车配件搜索";
+"price_order_by_default" = "价格不限";
+"price_order_by_ascent" = "价格从低到高";
+"price_order_by_descent" = "价格从高到低";
+"sales_volume_order_by_default" = "销量不限";
+"sales_volume_order_by_ascent" = "销量从低到高";
+"sales_volume_order_by_descent" = "销量从高到低";
+"auto_model_with_symbol" = "车型：";
+//// Part Selection String
+"all_part_type" = "所有配件分类";
+"part_type" = "%@分类";
+"plx_select_parts" = "请选择配件";
+
+
+// Personal Data VC String
+"personal_data" = "基本资料";
+"head_portrait" = "头像";
+"nick_name" = "用户昵称：";
+"user_name" = "用户姓名：";
+"credit" = "积分：";
+"gender" = "性别：";
+"dob" = "出生日期：";
+"mobile" = "手机：";
+"qq" = "QQ：";
+"email" = "邮箱：";
+"pwd_change" = "修改密码";
+
+"select_gender" = "选择性别";
+"select_dob" = "选择出生日期";
+
+"input_nick_name" = "请输入用户昵称";
+"input_user_name" = "请输入用户姓名";
+"qq_number" = "QQ号码";
+"input_qq" = "请输入QQ";
+"input_email" = "请输入邮箱地址";
+
+
+// MyCar Selection VC String
+"myautos_number" = "车牌号";
+"myautos_GPS" = "设备号(GPS)";
+"myautos_brand" = "品牌";
+"myautos_dealership" = "代理商";
+"myautos_series" = "车系";
+"myautos_model" = "车型";
+"myautos_color" = "颜色";
+"myautos_start_mile" = "初始里程";
+"myautos_insurance_num" = "保险单号";
+"myautos_insure_date" = "下次保险时间";
+"myautos_annual_date" = "下次年检时间";
+"myautos_maintenance_date" = "保养时间";
+"myautos_register_date" = "上牌时间";
+"myautos_frame_no" = "车架号";
+"myautos_engine_code" = "发动机号";
+
+"input_autos_licence" = "请输入车牌号";
+"input_autos_body_color" = "请输入车身颜色";
+"input_autos_frame" = "请输入车架号";
+"input_autos_engine" = "请输入发动机号";
+"input_autos_initial_mileage" = "请输入初始里程";
+"input_next_insurance_number" = "请输下保险单号";
+"input_next_insurance_date" = "请输下下次保险时间";
+"input_next_anniversary_check_date" = "请输下次年检";
+"input_next_maintenance_date" = "请输入保养时间";
+"input_register_date" = "请输入上牌时间";
+"input_select_auto" = "选择车辆信息";
+
+
+// My Repair VC String
+"repair_management" = "维修管理";
+"diagnosis_number" = "预约单号：";
+"diagnosis_datetime" = "下单时间：";
+"diagnosis_fee" = "费用：";
+"repair_detail" = "维修单详情";
+"repair_status" = "维修状态：";
+"order_number" = "预约单号码：";
+"repair_time" = "预约时间：";
+"repair_appointment" = "维修预约";
+"repair_analysis" = "维修诊断";
+"repair_authorization" = "维修授权委托";
+"repair_checkout" = "维修结算";
+"repair_tfsp" = "诊断号和维修商";
+"mycar_number_with_symbol" = "车牌号：";
+"repair_shop_with_symbol" = "维修商：";
+"repair_item_with_symbol" = "维修项目：";
+"repair_item" = "诊断项目";
+"repair_material" = "维修材料";
+"repair_technician_with_symbol" = "技师：";
+
+
+
+// My Order Confirm VC String
+"delivery_info" = "收货信息";
+"my_order_confirm" = "确认订单";
+
+// My Order VC String
+"my_order" = "我的订单";
+"all_order_list" = "所有订单";
+"wait4payment" = "待付款";
+"deliveries" = "配送中";
+"wait4comment" = "待评价";
+"total_amount" = "总 价：";
+"order_total_amount" = "订单金额：";
+"products_name" = "商品名称：";
+"order_datetime" = "下单时间：";
+"order_status" = "订单状态：";
+"order_id" = "订单号：";
+"parts_center" = "配件中心：";
+"product_fee" = "价格：";
+"check_logist_info" = "查看物流信息";
+"order_detail" = "订单详情";
+"submit_order" = "提交订单";
+"product_received" = "签收成功";
+"supplier" = "供应商：";
+"total_price" = "总  额：";
+"delivery_address" = "收货地址：";
+"consignee" = "收货人：";
+"postage" = "邮费：";
+"invoice" = "发票信息：";
+"pay_way" = "付款方式：";
+"product_detail" = "商品信息";
+"logist_detail" = "物流查询";
+"express_name" = "物流公司：";
+"express_order_num" = "运单号码：";
+"order_login_remind" = "点击此处登录\n取得隔热订单信息";
+"apply_return_goods" = "退货申请";
+
+// Order Payment VC String
+"payment" = "支付";
+"repair_payment" = "维修支付";
+"order_payment" = "订单支付";
+"payment_method_payAtarrived" = "货到付款";
+"payment_method_aliPay" = "支付宝支付";
+"payment_method_unionPay" = "银联支付";
+
+// My Enquiry VC
+"my_enquiry" = "我的询价";
+"enquiry_datetime" = "询价时间";
+
+
+// My Colllection VC String
+"my_collection" = "我的收藏";
+"product" = "商品";
+"store" = "店铺";
+"delete_all_warning" = "你是否肯定删除所有的%@收藏";
+"delete_warning" = "你是否肯定删除所选的%@收藏";
+
+// My Cart VC String
+"my_cart_vc" = "购物车";
+"my_cart_order_confirm" = "确认订单";
+
+
+// My Credit VC String
+"credit_history" = "历史积分";
+
+// My Address VC String
+"my_address" = "收货地址";
+"add_new_address" = "新增收货地址";
+"view_address_detail" = "收货地址详情";
+"post_title" = "邮编：";
+"consignee_name" = "收货人姓名：";
+"phone_number" = "手机号码：";
+"post_number" = "邮政编码：";
+"current_province" = "所在省份：";
+"current_city" = "所在城市：";
+"current_district" = "所在区域：";
+"address_detail" = "详细地址：";
+"please_select_province" = "--请选择省份--";
+"please_select_city" = "--请选择城市--";
+"please_select_district" = "--请选择区域--";
+"delete_all_adr_warning" = "你是否肯定删除所有的地址";
+"delete_adr_warning" = "你是否肯定删除所选的地址";
+"no_more_district_option" = "--没有更多区域--";
+
+// User Login Register VC String
+"login_success" = "登录成功";
+"login_fail" = "登录失败";
+"register_success" = "注册成功";
+"pw_update_success" = "密码更改成功";
+"register_fail" = "注册失败";
+"forget_password" = "忘记密码";
+"service_calls_0731-88865777" = "客服电话 0731 - 88865777";
+
+// GPS Driving History VC String
+
+"my_favorite_auto" = "我的爱车";
+"my_auto_driving_record" = "行车记录";
+"my_auto_navigation" = "行车导航";
+
+"plx_select_time_range" = "请选择时间段";
+"shortcut_time_range" = "24小时以内的时间段";
+"start_time" = "开始时间";
+"end_time" = "结束时间";
+"input_start_point" = "输入起点";
+"input_end_point" = "输入终点";
+
+
+/* 主页 - 安全设置 */
+
+"over_speed_setting" = "超速设定";
+"speed_setup" = "速度设置";
+"voice_reminder" = "语音提醒";
+"home_security_setting_0" = "电子围栏";
+"home_security_setting_1" = "紧急消息";
+"home_security_setting_2" = "超速设置";
+
+"home_security_setting_3" = "侧翻提醒";
+"home_security_setting_4" = "碰撞提醒";
+"home_security_setting_5" = "电瓶低电压提醒";
+"home_security_setting_10" = "断油断电提醒";
+
+"home_security_setting_6" = "拖车提醒";
+"home_security_setting_7" = "设备移除提醒";
+"home_security_setting_8" = "防盗喇叭提醒";
+"home_security_setting_9" = "疲劳驾驶提醒";
+
+"home_security_setting_open" = "开启";
+"home_security_setting_no_open" = "未开启";
+"home_security_setting_set" = "已设置";
+"home_security_setting_no_set" = "未设置";
+
+
+
+

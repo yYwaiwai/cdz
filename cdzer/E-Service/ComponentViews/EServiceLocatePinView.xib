@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="EServiceLocatePinView">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgF-e1-2NS">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="定位中" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxX-EY-JAg">
+                            <rect key="frame" x="12" y="8" width="76" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eserivce_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="uN0-Ie-4wn">
+                            <rect key="frame" x="82" y="12" width="6" height="11"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="6" id="Btw-JU-m6w"/>
+                                <constraint firstAttribute="width" secondItem="uN0-Ie-4wn" secondAttribute="height" multiplier="6:11" id="f1G-xc-Quk"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XxX-EY-JAg" firstAttribute="leading" secondItem="wgF-e1-2NS" secondAttribute="leading" constant="12" id="5QY-R7-xPm"/>
+                        <constraint firstAttribute="bottom" secondItem="XxX-EY-JAg" secondAttribute="bottom" constant="8" id="6fL-sW-Sfv"/>
+                        <constraint firstItem="uN0-Ie-4wn" firstAttribute="centerY" secondItem="wgF-e1-2NS" secondAttribute="centerY" id="748-2m-tqJ"/>
+                        <constraint firstAttribute="trailing" secondItem="XxX-EY-JAg" secondAttribute="trailing" constant="12" id="YSe-pE-upC"/>
+                        <constraint firstAttribute="trailing" secondItem="uN0-Ie-4wn" secondAttribute="trailing" constant="12" id="oCr-f6-WZa"/>
+                        <constraint firstItem="uN0-Ie-4wn" firstAttribute="leading" secondItem="XxX-EY-JAg" secondAttribute="trailing" priority="999" constant="4" id="umE-58-Uxk"/>
+                        <constraint firstItem="XxX-EY-JAg" firstAttribute="top" secondItem="wgF-e1-2NS" secondAttribute="top" constant="8" id="zrE-u9-d9e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wgF-e1-2NS" secondAttribute="bottom" constant="14" id="21L-Jo-LjQ"/>
+                <constraint firstAttribute="trailing" secondItem="wgF-e1-2NS" secondAttribute="trailing" id="MrN-wC-6U9"/>
+                <constraint firstItem="wgF-e1-2NS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZbY-d8-oR0"/>
+                <constraint firstItem="wgF-e1-2NS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cFR-Nq-sHO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressNoArrowConstraint" destination="YSe-pE-upC" id="VJZ-aO-H3R"/>
+                <outlet property="addressWithArrowConstraint" destination="umE-58-Uxk" id="R4C-pJ-3Is"/>
+                <outlet property="arrowIV" destination="uN0-Ie-4wn" id="rew-gJ-Eiy"/>
+                <outlet property="theAddressLabel" destination="XxX-EY-JAg" id="6lq-T2-AlD"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="166"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eserivce_arrow.png" width="6" height="11"/>
+    </resources>
+</document>

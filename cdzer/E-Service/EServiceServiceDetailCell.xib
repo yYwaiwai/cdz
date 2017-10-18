@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QKA-h2-WDe" customClass="EServiceServiceDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QKA-h2-WDe" id="mvB-KL-eTt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osh-3t-9Bp">
+                        <rect key="frame" x="12" y="0.0" width="84" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29.5" id="GLW-I2-ha1"/>
+                            <constraint firstAttribute="width" constant="84" id="juu-DP-Tsg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ek-0X-DRE">
+                        <rect key="frame" x="96" y="0.0" width="212" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Osh-3t-9Bp" secondAttribute="bottom" id="32m-5X-8ty"/>
+                    <constraint firstAttribute="trailing" secondItem="7ek-0X-DRE" secondAttribute="trailing" constant="12" id="4iz-zl-Yj0"/>
+                    <constraint firstItem="Osh-3t-9Bp" firstAttribute="top" secondItem="mvB-KL-eTt" secondAttribute="top" id="M93-qP-Yrd"/>
+                    <constraint firstItem="7ek-0X-DRE" firstAttribute="top" secondItem="mvB-KL-eTt" secondAttribute="top" id="Nfn-Vx-dlC"/>
+                    <constraint firstItem="7ek-0X-DRE" firstAttribute="leading" secondItem="Osh-3t-9Bp" secondAttribute="trailing" id="dOx-86-TrJ"/>
+                    <constraint firstItem="Osh-3t-9Bp" firstAttribute="leading" secondItem="mvB-KL-eTt" secondAttribute="leading" constant="12" id="fEY-4l-8zj"/>
+                    <constraint firstAttribute="bottom" secondItem="7ek-0X-DRE" secondAttribute="bottom" id="uEt-bd-ALr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="7ek-0X-DRE" id="pMI-Ch-Jyf"/>
+                <outlet property="titleLabel" destination="Osh-3t-9Bp" id="g5C-CO-qfy"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="269"/>
+        </tableViewCell>
+    </objects>
+</document>

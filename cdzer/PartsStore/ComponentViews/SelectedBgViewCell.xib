@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SelectedBgViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-Lr-YfP">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="43"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="Chk-Qn-B3V"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="try-Ee-6vt">
+                        <rect key="frame" x="6" y="0.0" width="100" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="try-Ee-6vt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4cl-CC-t5z"/>
+                    <constraint firstAttribute="trailing" secondItem="IhY-Lr-YfP" secondAttribute="trailing" id="Ckl-pb-9WD"/>
+                    <constraint firstItem="IhY-Lr-YfP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MIg-Sa-YQ5"/>
+                    <constraint firstItem="try-Ee-6vt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="NEN-uZ-9s5"/>
+                    <constraint firstItem="IhY-Lr-YfP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e3F-fg-wP5"/>
+                    <constraint firstAttribute="bottom" secondItem="IhY-Lr-YfP" secondAttribute="bottom" id="ehd-wQ-4RA"/>
+                    <constraint firstItem="try-Ee-6vt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l5z-ac-SnY"/>
+                    <constraint firstAttribute="trailing" secondItem="try-Ee-6vt" secondAttribute="trailing" constant="6" id="yHF-7Z-1Mk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="IhY-Lr-YfP" id="8Fz-Zp-391"/>
+                <outlet property="nameLabel" destination="try-Ee-6vt" id="vXC-Nj-HO7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

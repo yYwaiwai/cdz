@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelfDiagnosisMBVCell">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noc-ib-cxB">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="98"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhenduanjieguo-selectedImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="WVc-5H-nYo">
+                                <rect key="frame" x="88" y="80" width="18" height="18"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WVc-5H-nYo" secondAttribute="bottom" id="Gsv-Qh-mcB"/>
+                            <constraint firstAttribute="trailing" secondItem="WVc-5H-nYo" secondAttribute="trailing" id="W1F-et-eNf"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9Z-7Z-O0m">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="98"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNo-Kr-VrW">
+                                <rect key="frame" x="34.5" y="25" width="37" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发动机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bO-OI-ANI">
+                                        <rect key="frame" x="0.0" y="33" width="37" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdmbvc_engine_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rtl-94-xlq">
+                                        <rect key="frame" x="10" y="0.0" width="18" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2bO-OI-ANI" firstAttribute="leading" secondItem="tNo-Kr-VrW" secondAttribute="leading" id="3wx-gX-Yhk"/>
+                                    <constraint firstItem="Rtl-94-xlq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tNo-Kr-VrW" secondAttribute="leading" id="MWe-Ur-kTs"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rtl-94-xlq" secondAttribute="trailing" id="SKQ-p7-XaB"/>
+                                    <constraint firstItem="Rtl-94-xlq" firstAttribute="top" secondItem="tNo-Kr-VrW" secondAttribute="top" id="TlY-J1-whM"/>
+                                    <constraint firstItem="2bO-OI-ANI" firstAttribute="top" secondItem="Rtl-94-xlq" secondAttribute="bottom" constant="13" id="dGa-68-ZdW"/>
+                                    <constraint firstAttribute="trailing" secondItem="2bO-OI-ANI" secondAttribute="trailing" id="hYO-5v-zwo"/>
+                                    <constraint firstItem="Rtl-94-xlq" firstAttribute="centerX" secondItem="tNo-Kr-VrW" secondAttribute="centerX" id="vFE-kU-agz"/>
+                                    <constraint firstAttribute="bottom" secondItem="2bO-OI-ANI" secondAttribute="bottom" id="yWz-c4-cVG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tNo-Kr-VrW" firstAttribute="centerX" secondItem="P9Z-7Z-O0m" secondAttribute="centerX" id="jPX-4m-OHC"/>
+                            <constraint firstItem="tNo-Kr-VrW" firstAttribute="centerY" secondItem="P9Z-7Z-O0m" secondAttribute="centerY" id="ktT-lw-huh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P9Z-7Z-O0m" secondAttribute="bottom" id="1bf-RM-G34"/>
+                <constraint firstItem="P9Z-7Z-O0m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8be-vv-qUf"/>
+                <constraint firstAttribute="trailing" secondItem="noc-ib-cxB" secondAttribute="trailing" id="Ltj-Zs-g5C"/>
+                <constraint firstAttribute="bottom" secondItem="noc-ib-cxB" secondAttribute="bottom" id="MJx-dN-kHY"/>
+                <constraint firstAttribute="trailing" secondItem="P9Z-7Z-O0m" secondAttribute="trailing" id="fhe-72-1vp"/>
+                <constraint firstItem="P9Z-7Z-O0m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h4Z-bt-2CJ"/>
+                <constraint firstItem="noc-ib-cxB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="s3h-XK-9Od"/>
+                <constraint firstItem="noc-ib-cxB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wmj-sB-Dd5"/>
+            </constraints>
+            <size key="customSize" width="121" height="73"/>
+            <connections>
+                <outlet property="iconIV" destination="Rtl-94-xlq" id="2mB-8q-FHQ"/>
+                <outlet property="selectedIndicatorView" destination="noc-ib-cxB" id="vOJ-Vq-GSG"/>
+                <outlet property="titleLabel" destination="2bO-OI-ANI" id="PwK-Po-wv2"/>
+            </connections>
+            <point key="canvasLocation" x="178" y="199"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sdmbvc_engine_icon.png" width="18" height="20"/>
+        <image name="zhenduanjieguo-selectedImg.png" width="18" height="18"/>
+    </resources>
+</document>

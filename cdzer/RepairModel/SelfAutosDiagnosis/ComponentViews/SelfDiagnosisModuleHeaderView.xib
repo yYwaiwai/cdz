@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelfDiagnosisModuleHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3O3-0f-Vbb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" image="sad_hint_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="iY4-sF-RUx">
+                            <rect key="frame" x="12" y="18" width="29" height="9"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="如果您不知道您的车辆故障所处的部位，您可以直接选择它：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-Nf-A1A">
+                            <rect key="frame" x="62" y="10" width="246" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Aah-Nf-A1A" firstAttribute="leading" secondItem="iY4-sF-RUx" secondAttribute="trailing" constant="21" id="2kr-cI-T6U"/>
+                        <constraint firstAttribute="bottom" secondItem="Aah-Nf-A1A" secondAttribute="bottom" constant="10" id="OwH-Bc-Axw"/>
+                        <constraint firstItem="iY4-sF-RUx" firstAttribute="centerY" secondItem="3O3-0f-Vbb" secondAttribute="centerY" id="VbI-cs-dsa"/>
+                        <constraint firstAttribute="trailing" secondItem="Aah-Nf-A1A" secondAttribute="trailing" constant="12" id="Zno-ll-wwG"/>
+                        <constraint firstItem="iY4-sF-RUx" firstAttribute="leading" secondItem="3O3-0f-Vbb" secondAttribute="leading" constant="12" id="aW5-pT-UR9"/>
+                        <constraint firstItem="Aah-Nf-A1A" firstAttribute="top" secondItem="3O3-0f-Vbb" secondAttribute="top" constant="10" id="ghP-fU-nfq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3O3-0f-Vbb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fd2-oy-DfG"/>
+                <constraint firstAttribute="bottom" secondItem="3O3-0f-Vbb" secondAttribute="bottom" id="gNf-sq-L1w"/>
+                <constraint firstAttribute="trailing" secondItem="3O3-0f-Vbb" secondAttribute="trailing" id="q5c-Mb-6tF"/>
+                <constraint firstItem="3O3-0f-Vbb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="svJ-kR-KZw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_contentView" destination="3O3-0f-Vbb" id="a9a-xj-c5f"/>
+                <outlet property="hintLabel" destination="Aah-Nf-A1A" id="EZt-Mc-qfY"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="167.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sad_hint_icon.png" width="29" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindAccessoriesCategoryVC">
+            <connections>
+                <outlet property="carMessageLabel" destination="dx5-Tv-KhH" id="j0S-Tq-M4P"/>
+                <outlet property="collectionView" destination="PbU-WK-PU8" id="PD1-yL-O87"/>
+                <outlet property="headControl" destination="JTG-XS-6Mj" id="Mze-Gl-dfp"/>
+                <outlet property="headImageView" destination="KQ7-9Y-rys" id="cRb-UO-Hpt"/>
+                <outlet property="tableView" destination="aQV-sP-ew6" id="ASK-eF-1JS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTG-XS-6Mj" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kjby_sy_cheliangbeijing.png" translatesAutoresizingMaskIntoConstraints="NO" id="ozg-7S-HcA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eserivce_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nlo-VW-QcC">
+                            <rect key="frame" x="361" y="26" width="6" height="11"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="11" id="eoa-dZ-zGf"/>
+                                <constraint firstAttribute="width" constant="6" id="tej-Ho-U5P"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KQ7-9Y-rys">
+                            <rect key="frame" x="13" y="9" width="45" height="45"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Bn2-hA-beV"/>
+                                <constraint firstAttribute="width" constant="45" id="eVy-Mu-fRy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥迪A6那块数据的路口上降低呢长沙可能都卡死" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx5-Tv-KhH">
+                            <rect key="frame" x="66" y="21" width="287" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KQ7-9Y-rys" secondAttribute="bottom" constant="9" id="1p5-q6-q0I"/>
+                        <constraint firstItem="KQ7-9Y-rys" firstAttribute="leading" secondItem="JTG-XS-6Mj" secondAttribute="leading" constant="13" id="7bA-Dh-VHQ"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dx5-Tv-KhH" secondAttribute="bottom" constant="9" id="Bgb-lX-myP"/>
+                        <constraint firstItem="Nlo-VW-QcC" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="top" constant="26" id="CPn-aP-Cqa"/>
+                        <constraint firstItem="dx5-Tv-KhH" firstAttribute="leading" secondItem="KQ7-9Y-rys" secondAttribute="trailing" constant="8" id="GLz-U1-I8K"/>
+                        <constraint firstAttribute="height" constant="63" id="IWd-IV-vV8"/>
+                        <constraint firstAttribute="trailing" secondItem="Nlo-VW-QcC" secondAttribute="trailing" constant="8" id="JIN-6E-V47"/>
+                        <constraint firstAttribute="bottom" secondItem="Nlo-VW-QcC" secondAttribute="bottom" constant="26" id="ZU9-vK-Czk"/>
+                        <constraint firstItem="dx5-Tv-KhH" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="top" constant="21" id="aDz-hU-Owe"/>
+                        <constraint firstItem="KQ7-9Y-rys" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="top" constant="9" id="jf3-eU-78C"/>
+                        <constraint firstItem="Nlo-VW-QcC" firstAttribute="leading" secondItem="dx5-Tv-KhH" secondAttribute="trailing" constant="8" id="mBc-NC-2VZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aQV-sP-ew6">
+                    <rect key="frame" x="0.0" y="63" width="101.5" height="604"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="H7e-Mn-HbG"/>
+                        <outlet property="delegate" destination="-1" id="1F1-5g-OSR"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="WD3-wP-MF4"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="TMl-0a-Hf7"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PbU-WK-PU8">
+                    <rect key="frame" x="111.5" y="63" width="253.5" height="604"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyl-2v-tIN">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mq9-yx-T0G"/>
+                        <outlet property="delegate" destination="-1" id="pIF-HM-o8P"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="O5r-jl-gsx"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="WUb-bj-dNA"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JTG-XS-6Mj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0fW-HV-eio"/>
+                <constraint firstItem="PbU-WK-PU8" firstAttribute="leading" secondItem="aQV-sP-ew6" secondAttribute="trailing" constant="10" id="56R-qQ-jyd"/>
+                <constraint firstItem="PbU-WK-PU8" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="bottom" id="BZ7-oX-Ty5"/>
+                <constraint firstAttribute="trailing" secondItem="PbU-WK-PU8" secondAttribute="trailing" constant="10" id="GXE-bh-Y3W"/>
+                <constraint firstItem="aQV-sP-ew6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LKt-qp-1OD"/>
+                <constraint firstItem="PbU-WK-PU8" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="bottom" id="hCp-vO-OC8"/>
+                <constraint firstItem="aQV-sP-ew6" firstAttribute="top" secondItem="JTG-XS-6Mj" secondAttribute="bottom" id="j6Z-Ac-f1z"/>
+                <constraint firstAttribute="bottom" secondItem="aQV-sP-ew6" secondAttribute="bottom" id="jy3-d1-Ys9"/>
+                <constraint firstAttribute="bottom" secondItem="PbU-WK-PU8" secondAttribute="bottom" id="kHp-Cq-Oth"/>
+                <constraint firstItem="JTG-XS-6Mj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="llg-tg-AoU"/>
+                <constraint firstAttribute="trailing" secondItem="JTG-XS-6Mj" secondAttribute="trailing" id="yBW-Bb-Z7u"/>
+                <constraint firstItem="aQV-sP-ew6" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.270531" id="yVJ-SG-7mc"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="eserivce_arrow.png" width="6" height="11"/>
+        <image name="kjby_sy_cheliangbeijing.png" width="414" height="67"/>
+    </resources>
+</document>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSAutosDrivingRecordVC">
+            <connections>
+                <outlet property="backwardButton" destination="Nm8-Uc-wN7" id="IUY-MU-IEG"/>
+                <outlet property="endDateTimeLabel" destination="1MA-6H-lAR" id="QaV-0d-H9E"/>
+                <outlet property="forwardButton" destination="q5x-uo-3aw" id="kYd-sR-vni"/>
+                <outlet property="mapView" destination="Sj1-oQ-vfd" id="YJm-OX-2GL"/>
+                <outlet property="playButton" destination="otw-bm-7dy" id="av5-Pg-eUS"/>
+                <outlet property="startDateTimeLabel" destination="Psj-OQ-Mwu" id="18a-ZD-Gmq"/>
+                <outlet property="timeSlider" destination="24n-VF-qmP" id="x1f-3f-smZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj1-oQ-vfd" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h03-ni-LuX">
+                    <rect key="frame" x="12" y="16" width="49" height="49"/>
+                    <state key="normal" image="GPS_autos_info_time_selection_icon.png"/>
+                    <connections>
+                        <action selector="showDateTimeSelView" destination="-1" eventType="touchUpInside" id="pS2-Gr-2CU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nw-fj-VEa">
+                    <rect key="frame" x="71" y="16" width="292" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-OQ-Mwu">
+                            <rect key="frame" x="7" y="0.0" width="32" height="49"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MA-6H-lAR">
+                            <rect key="frame" x="253" y="0.0" width="32" height="49"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24n-VF-qmP" customClass="YDSlider">
+                            <rect key="frame" x="46" y="0.0" width="200" height="49"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="timeSliderValueChange:" destination="-1" eventType="valueChanged" id="YSU-uA-MHM"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1MA-6H-lAR" firstAttribute="leading" secondItem="24n-VF-qmP" secondAttribute="trailing" constant="7" id="0nj-ui-lJq"/>
+                        <constraint firstAttribute="bottom" secondItem="Psj-OQ-Mwu" secondAttribute="bottom" id="8we-AG-cuM"/>
+                        <constraint firstItem="24n-VF-qmP" firstAttribute="top" secondItem="5Nw-fj-VEa" secondAttribute="top" id="Gz7-ag-LbS"/>
+                        <constraint firstItem="Psj-OQ-Mwu" firstAttribute="top" secondItem="5Nw-fj-VEa" secondAttribute="top" id="ZOF-oa-Xcv"/>
+                        <constraint firstItem="Psj-OQ-Mwu" firstAttribute="leading" secondItem="5Nw-fj-VEa" secondAttribute="leading" constant="7" id="ahd-jc-COK"/>
+                        <constraint firstAttribute="bottom" secondItem="24n-VF-qmP" secondAttribute="bottom" id="hCr-nX-5tS"/>
+                        <constraint firstAttribute="trailing" secondItem="1MA-6H-lAR" secondAttribute="trailing" constant="7" id="iF3-cq-NwC"/>
+                        <constraint firstAttribute="bottom" secondItem="1MA-6H-lAR" secondAttribute="bottom" id="oL3-9a-mrm"/>
+                        <constraint firstItem="24n-VF-qmP" firstAttribute="leading" secondItem="Psj-OQ-Mwu" secondAttribute="trailing" constant="7" id="skz-Mi-DSc"/>
+                        <constraint firstItem="1MA-6H-lAR" firstAttribute="top" secondItem="5Nw-fj-VEa" secondAttribute="top" id="vxe-2r-ePr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKf-vC-cW8">
+                    <rect key="frame" x="33.5" y="560.5" width="171" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm8-Uc-wN7">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                            <state key="normal" image="GPS_autos_drive_path_backward_icon.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5x-uo-3aw">
+                            <rect key="frame" x="122" y="0.0" width="49" height="49"/>
+                            <state key="normal" image="GPS_autos_drive_path_forward_icon.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otw-bm-7dy">
+                            <rect key="frame" x="61" y="0.0" width="49" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="Dgf-Qv-G1F"/>
+                                <constraint firstAttribute="width" secondItem="otw-bm-7dy" secondAttribute="height" multiplier="1:1" id="ZB4-A6-zpr"/>
+                            </constraints>
+                            <state key="normal" image="GPS_autos_drive_path_play_icon.png"/>
+                            <state key="selected" image="GPS_autos_drive_path_stop_icon.png"/>
+                            <connections>
+                                <action selector="stopPlayer:" destination="-1" eventType="touchUpInside" id="CXD-jo-7m6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="otw-bm-7dy" firstAttribute="centerY" secondItem="VKf-vC-cW8" secondAttribute="centerY" id="BIH-9f-r57"/>
+                        <constraint firstAttribute="trailing" secondItem="q5x-uo-3aw" secondAttribute="trailing" id="Kre-W7-Ot2"/>
+                        <constraint firstItem="Nm8-Uc-wN7" firstAttribute="top" secondItem="VKf-vC-cW8" secondAttribute="top" id="LwE-BQ-w1a"/>
+                        <constraint firstItem="otw-bm-7dy" firstAttribute="leading" secondItem="Nm8-Uc-wN7" secondAttribute="trailing" constant="12" id="Oc7-YX-CvT"/>
+                        <constraint firstItem="Nm8-Uc-wN7" firstAttribute="leading" secondItem="VKf-vC-cW8" secondAttribute="leading" id="SsF-e1-wL7"/>
+                        <constraint firstAttribute="bottom" secondItem="otw-bm-7dy" secondAttribute="bottom" id="UXV-V4-dzd"/>
+                        <constraint firstAttribute="bottom" secondItem="Nm8-Uc-wN7" secondAttribute="bottom" id="X69-Vg-s9X"/>
+                        <constraint firstItem="q5x-uo-3aw" firstAttribute="top" secondItem="VKf-vC-cW8" secondAttribute="top" id="eqU-I3-KqU"/>
+                        <constraint firstItem="q5x-uo-3aw" firstAttribute="leading" secondItem="otw-bm-7dy" secondAttribute="trailing" constant="12" id="qkd-G1-wog"/>
+                        <constraint firstAttribute="bottom" secondItem="q5x-uo-3aw" secondAttribute="bottom" id="ynW-6e-roP"/>
+                        <constraint firstItem="otw-bm-7dy" firstAttribute="top" secondItem="VKf-vC-cW8" secondAttribute="top" id="zoh-x6-q5a"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sj1-oQ-vfd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2MW-vj-Iaz"/>
+                <constraint firstAttribute="trailing" secondItem="Sj1-oQ-vfd" secondAttribute="trailing" id="8H2-yD-639"/>
+                <constraint firstItem="h03-ni-LuX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="GCp-Zv-9Nc"/>
+                <constraint firstAttribute="bottom" secondItem="Sj1-oQ-vfd" secondAttribute="bottom" id="XNb-wB-fzg"/>
+                <constraint firstItem="Sj1-oQ-vfd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YE7-Nd-l4R"/>
+                <constraint firstItem="VKf-vC-cW8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.75408" id="c5N-FF-AyN"/>
+                <constraint firstItem="VKf-vC-cW8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.635266" id="cuX-fV-6FE"/>
+                <constraint firstItem="h03-ni-LuX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="eBF-6c-AFq"/>
+                <constraint firstItem="5Nw-fj-VEa" firstAttribute="leading" secondItem="h03-ni-LuX" secondAttribute="trailing" constant="10" id="hpN-g2-aPc"/>
+                <constraint firstItem="5Nw-fj-VEa" firstAttribute="top" secondItem="h03-ni-LuX" secondAttribute="top" id="uLu-Lj-cOC"/>
+                <constraint firstAttribute="trailing" secondItem="5Nw-fj-VEa" secondAttribute="trailing" constant="12" id="vcL-GI-Bda"/>
+                <constraint firstItem="5Nw-fj-VEa" firstAttribute="bottom" secondItem="h03-ni-LuX" secondAttribute="bottom" id="w1d-8d-ImD"/>
+            </constraints>
+            <point key="canvasLocation" x="369" y="291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GPS_autos_drive_path_backward_icon.png" width="49" height="49"/>
+        <image name="GPS_autos_drive_path_forward_icon.png" width="49" height="49"/>
+        <image name="GPS_autos_drive_path_play_icon.png" width="49" height="49"/>
+        <image name="GPS_autos_drive_path_stop_icon.png" width="49" height="49"/>
+        <image name="GPS_autos_info_time_selection_icon.png" width="49" height="49"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

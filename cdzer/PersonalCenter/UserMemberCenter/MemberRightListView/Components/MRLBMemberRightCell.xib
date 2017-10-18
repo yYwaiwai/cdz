@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="vhF-aZ-N5u" customClass="MemberRightListBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhF-aZ-N5u" id="V5f-Pd-PHc">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-JE-wQU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="65.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jku-HI-Fx1">
+                                <rect key="frame" x="0.0" y="0.0" width="74" height="65.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_logo_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKL-YT-MKm">
+                                        <rect key="frame" x="20" y="15.5" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="LDD-7g-cKZ"/>
+                                            <constraint firstAttribute="width" constant="34" id="qvY-4N-glt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WKL-YT-MKm" firstAttribute="centerY" secondItem="jku-HI-Fx1" secondAttribute="centerY" id="2Z5-pn-0hX"/>
+                                    <constraint firstAttribute="width" constant="74" id="Mp1-lb-hGz"/>
+                                    <constraint firstItem="WKL-YT-MKm" firstAttribute="centerX" secondItem="jku-HI-Fx1" secondAttribute="centerX" id="SAa-VV-6Op"/>
+                                </constraints>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVp-SF-1rm">
+                                <rect key="frame" x="74" y="0.0" width="340" height="65.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="铜牌会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDI-En-hST">
+                                        <rect key="frame" x="0.0" y="10" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="享受权益：会员折扣" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s39-Dn-iSQ">
+                                        <rect key="frame" x="0.0" y="39" width="328" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="s39-Dn-iSQ" firstAttribute="top" secondItem="nDI-En-hST" secondAttribute="bottom" constant="12" id="1eg-RL-dMz"/>
+                                    <constraint firstAttribute="trailing" secondItem="s39-Dn-iSQ" secondAttribute="trailing" constant="12" id="CTT-94-X1P"/>
+                                    <constraint firstItem="nDI-En-hST" firstAttribute="leading" secondItem="IVp-SF-1rm" secondAttribute="leading" id="SV6-kc-oAH"/>
+                                    <constraint firstItem="s39-Dn-iSQ" firstAttribute="leading" secondItem="IVp-SF-1rm" secondAttribute="leading" id="Uhv-QQ-h4P"/>
+                                    <constraint firstItem="nDI-En-hST" firstAttribute="top" secondItem="IVp-SF-1rm" secondAttribute="top" constant="10" id="ja9-we-m6v"/>
+                                    <constraint firstAttribute="bottom" secondItem="s39-Dn-iSQ" secondAttribute="bottom" constant="13" id="nVK-iI-pGx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IVp-SF-1rm" secondAttribute="bottom" id="4bj-sp-K1f"/>
+                            <constraint firstItem="jku-HI-Fx1" firstAttribute="top" secondItem="cMZ-JE-wQU" secondAttribute="top" id="9Dk-rn-w2T"/>
+                            <constraint firstItem="IVp-SF-1rm" firstAttribute="leading" secondItem="jku-HI-Fx1" secondAttribute="trailing" id="F9p-Sd-EXL"/>
+                            <constraint firstAttribute="bottom" secondItem="jku-HI-Fx1" secondAttribute="bottom" id="kqj-aX-Wxn"/>
+                            <constraint firstItem="IVp-SF-1rm" firstAttribute="top" secondItem="cMZ-JE-wQU" secondAttribute="top" id="mR8-k2-eMB"/>
+                            <constraint firstAttribute="trailing" secondItem="IVp-SF-1rm" secondAttribute="trailing" id="v40-NY-b6d"/>
+                            <constraint firstItem="jku-HI-Fx1" firstAttribute="leading" secondItem="cMZ-JE-wQU" secondAttribute="leading" id="w30-3Z-j9v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cMZ-JE-wQU" firstAttribute="leading" secondItem="V5f-Pd-PHc" secondAttribute="leading" id="Ei9-lw-Ym6"/>
+                    <constraint firstItem="cMZ-JE-wQU" firstAttribute="top" secondItem="V5f-Pd-PHc" secondAttribute="top" id="FtS-JL-xao"/>
+                    <constraint firstAttribute="trailing" secondItem="cMZ-JE-wQU" secondAttribute="trailing" id="hsV-z5-elL"/>
+                    <constraint firstAttribute="bottom" secondItem="cMZ-JE-wQU" secondAttribute="bottom" id="kg1-NI-FUU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userRightsContentLabel" destination="s39-Dn-iSQ" id="RnB-1u-hw4"/>
+                <outlet property="userRightsIconIV" destination="WKL-YT-MKm" id="sHd-Er-iZh"/>
+                <outlet property="userRightsTitleLabel" destination="nDI-En-hST" id="T61-Pn-ojJ"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="313"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="white_logo_small.png" width="30" height="30"/>
+    </resources>
+</document>

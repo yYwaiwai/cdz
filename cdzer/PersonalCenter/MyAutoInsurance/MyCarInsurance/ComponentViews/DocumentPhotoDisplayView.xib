@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InsuranceDetailsVC">
+            <connections>
+                <outlet property="documentPhotoDisplayView" destination="iN0-l3-epB" id="Hdh-vG-Gan"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DocumentPhotoDisplayView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-0U-65s" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dO-l9-USF">
+                            <rect key="frame" x="27.5" y="224.5" width="320" height="218"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weizhangchaxun-EngineFrameNumberIm.png" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-2a-P2U">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fK5-2a-P2U" secondAttribute="height" multiplier="160:109" id="3XG-g3-fFs"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="fK5-2a-P2U" secondAttribute="bottom" id="2OW-d6-eHz"/>
+                                <constraint firstItem="fK5-2a-P2U" firstAttribute="leading" secondItem="8dO-l9-USF" secondAttribute="leading" id="RLh-e7-JKg"/>
+                                <constraint firstItem="fK5-2a-P2U" firstAttribute="top" secondItem="8dO-l9-USF" secondAttribute="top" id="U5D-9H-GRO"/>
+                                <constraint firstAttribute="trailing" secondItem="fK5-2a-P2U" secondAttribute="trailing" id="jsF-Bu-7v6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8dO-l9-USF" secondAttribute="trailing" constant="20" id="1D4-ud-wf7"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8dO-l9-USF" secondAttribute="bottom" constant="100" id="5N1-Gt-g8f"/>
+                        <constraint firstItem="8dO-l9-USF" firstAttribute="centerX" secondItem="qNe-0U-65s" secondAttribute="centerX" id="WgA-Ed-vAv"/>
+                        <constraint firstItem="8dO-l9-USF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qNe-0U-65s" secondAttribute="leading" constant="20" id="b7c-Hn-Tuv"/>
+                        <constraint firstItem="8dO-l9-USF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qNe-0U-65s" secondAttribute="top" constant="100" id="mzV-9s-RlQ"/>
+                        <constraint firstItem="8dO-l9-USF" firstAttribute="centerY" secondItem="qNe-0U-65s" secondAttribute="centerY" id="sg1-5k-7ku"/>
+                    </constraints>
+                    <connections>
+                        <action selector="DocumentPhotoDisplayBGView:" destination="iN0-l3-epB" eventType="touchUpInside" id="G4m-uF-yB3"/>
+                    </connections>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qNe-0U-65s" secondAttribute="bottom" id="SIM-So-rrC"/>
+                <constraint firstItem="qNe-0U-65s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UuI-2r-ngZ"/>
+                <constraint firstAttribute="trailing" secondItem="qNe-0U-65s" secondAttribute="trailing" id="bPK-Y4-GfX"/>
+                <constraint firstItem="qNe-0U-65s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hTf-ZJ-MUv"/>
+            </constraints>
+            <connections>
+                <outlet property="DocumentPhotoDisplayBGView" destination="qNe-0U-65s" id="oZ2-YE-mUn"/>
+                <outlet property="certificatesImageView" destination="fK5-2a-P2U" id="4zs-Ac-b71"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="weizhangchaxun-EngineFrameNumberIm.png" width="320" height="218"/>
+    </resources>
+</document>

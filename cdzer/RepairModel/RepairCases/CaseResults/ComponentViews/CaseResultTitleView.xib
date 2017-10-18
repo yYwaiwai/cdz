@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CaseResultTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vlg-KG-ep1">
+                    <rect key="frame" x="17" y="0.0" width="286" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="SYG-3t-gHI">
+                            <rect key="frame" x="6" y="15" width="274" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="cgq-tU-INr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="0cT-uF-Tcl"/>
+                        <constraint firstAttribute="bottom" secondItem="SYG-3t-gHI" secondAttribute="bottom" constant="15" id="0vg-XE-aqM"/>
+                        <constraint firstAttribute="trailing" secondItem="SYG-3t-gHI" secondAttribute="trailing" constant="6" id="3tW-na-kSK"/>
+                        <constraint firstItem="SYG-3t-gHI" firstAttribute="leading" secondItem="Vlg-KG-ep1" secondAttribute="leading" constant="6" id="Ib9-db-yQi"/>
+                        <constraint firstItem="SYG-3t-gHI" firstAttribute="top" secondItem="Vlg-KG-ep1" secondAttribute="top" constant="15" id="nXt-bm-nlO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="CRTV"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vlg-KG-ep1" secondAttribute="bottom" constant="8" id="Sjb-pa-74M"/>
+                <constraint firstItem="Vlg-KG-ep1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VzW-Jt-7K2"/>
+                <constraint firstAttribute="bottom" secondItem="Vlg-KG-ep1" secondAttribute="bottom" constant="8" id="f5l-ej-069"/>
+                <constraint firstItem="Vlg-KG-ep1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tE3-VN-MTb"/>
+                <constraint firstItem="Vlg-KG-ep1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tYZ-QX-wVZ"/>
+                <constraint firstItem="Vlg-KG-ep1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uce-P5-XR8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentViewWidthConstraint" destination="0cT-uF-Tcl" id="SfZ-li-OfH"/>
+                <outlet property="subTitleLabel" destination="SYG-3t-gHI" id="apy-Cf-jhH"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="69"/>
+        </view>
+        <view contentMode="scaleToFill" id="aqi-9B-Vyc" customClass="CaseResultTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FO-cQ-XsM">
+                    <rect key="frame" x="17" y="0.0" width="286" height="142"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="cr_engine_title_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="GGV-FU-BxW">
+                            <rect key="frame" x="106" y="6" width="74" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="GGV-FU-BxW" secondAttribute="height" multiplier="74:57" id="QIH-1z-pET"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="发动机" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbW-Nc-39u">
+                            <rect key="frame" x="119" y="73" width="48" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.28627450980000002" green="0.78039215689999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发动机不能启动，但有着车的征兆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="877-g5-j9V">
+                            <rect key="frame" x="53" y="106" width="180" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="877-g5-j9V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5FO-cQ-XsM" secondAttribute="leading" constant="6" id="1kC-NY-ZEs"/>
+                        <constraint firstItem="LbW-Nc-39u" firstAttribute="centerX" secondItem="5FO-cQ-XsM" secondAttribute="centerX" id="2KX-LH-Acu"/>
+                        <constraint firstItem="GGV-FU-BxW" firstAttribute="top" secondItem="5FO-cQ-XsM" secondAttribute="top" constant="6" id="2cg-Cn-oIc"/>
+                        <constraint firstItem="877-g5-j9V" firstAttribute="top" secondItem="LbW-Nc-39u" secondAttribute="bottom" constant="13" id="3Rx-AB-xxn"/>
+                        <constraint firstItem="LbW-Nc-39u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5FO-cQ-XsM" secondAttribute="leading" constant="6" id="9WM-lm-db4"/>
+                        <constraint firstItem="GGV-FU-BxW" firstAttribute="centerX" secondItem="5FO-cQ-XsM" secondAttribute="centerX" id="dKM-Bs-jlQ"/>
+                        <constraint firstAttribute="bottom" secondItem="877-g5-j9V" secondAttribute="bottom" constant="21" id="kw6-kU-mg2"/>
+                        <constraint firstItem="LbW-Nc-39u" firstAttribute="top" secondItem="GGV-FU-BxW" secondAttribute="bottom" constant="10" id="l2A-aI-EV1"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LbW-Nc-39u" secondAttribute="trailing" constant="6" id="tBl-mB-Wh7"/>
+                        <constraint firstAttribute="width" constant="286" id="xA2-KK-t7h"/>
+                        <constraint firstItem="877-g5-j9V" firstAttribute="centerX" secondItem="5FO-cQ-XsM" secondAttribute="centerX" id="xnU-YC-hD6"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="877-g5-j9V" secondAttribute="trailing" constant="6" id="zdp-r4-eN8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="CRTVWI"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5FO-cQ-XsM" secondAttribute="bottom" constant="8" id="DOl-3r-j4Z"/>
+                <constraint firstItem="5FO-cQ-XsM" firstAttribute="top" secondItem="aqi-9B-Vyc" secondAttribute="top" id="MUf-lo-4tI"/>
+                <constraint firstItem="5FO-cQ-XsM" firstAttribute="centerX" secondItem="aqi-9B-Vyc" secondAttribute="centerX" id="x5x-lU-6zi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentViewWidthConstraint" destination="xA2-KK-t7h" id="jsv-DG-xCv"/>
+                <outlet property="mainTitleIV" destination="GGV-FU-BxW" id="k9Y-xQ-jww"/>
+                <outlet property="mainTitleLabel" destination="LbW-Nc-39u" id="6DC-oc-R73"/>
+                <outlet property="subTitleLabel" destination="877-g5-j9V" id="xpd-3y-Dhz"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="174"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cr_engine_title_icon.png" width="74" height="57"/>
+    </resources>
+</document>
